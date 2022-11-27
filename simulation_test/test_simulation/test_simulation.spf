@@ -1,0 +1,13 @@
+<RadiantSimulationProject language="1" stage="0" simType="ModelSim" name="test_simulation" version="2.0" path=".">
+    <Source include="none" worklib="work" path="test_simulation/testbench/bus_driver.v" type="VERILOG" langstandard=""/>
+    <Source include="none" worklib="work" path="test_simulation/testbench/clk_driver.v" type="VERILOG" langstandard=""/>
+    <Source include="none" worklib="work" path="test_simulation/testbench/csi2_model.v" type="VERILOG" langstandard=""/>
+    <Source include="none" worklib="work" path="test_simulation/rtl/test_simulation.v" type="VERILOG" langstandard=""/>
+    <Source include="none" worklib="work" path="test_simulation/testbench/tb_top.v" type="VERILOG" langstandard=""/>
+    <Source include="none" worklib="work" path="test_simulation/testbench/dsi_model.v" type="VERILOG" langstandard=""/>
+    <SimLib value="pmi_work ovi_lifcl"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <Udo value=""/>
+    <TopModule language="VERILOG" instance="" name="tb_top"/>
+</RadiantSimulationProject>

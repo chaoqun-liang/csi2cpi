@@ -1,0 +1,12 @@
+#Start recording tcl command: 11/23/2022 18:05:03
+#Project Location: C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI; Project name: CSI2CPI
+C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test
+csi2cpi_test
+#Start recording tcl command: 11/23/2022 18:15:29
+#Project Location: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test; Project name: csi2cpi_test
+prj_open "C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI/CSI2CPI.rdf"
+prj_run Synthesis -impl impl_1
+prj_save 
+prj_close
+prj_open "C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/csi2cpi_test.rdf"
+#Stop recording: 11/23/2022 18:15:29

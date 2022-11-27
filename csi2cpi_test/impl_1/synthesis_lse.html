@@ -1,0 +1,1105 @@
+<HTML>
+<HEAD>
+<TITLE>Synthesis Report</TITLE>
+<link href="file:///C:/lscc/radiant/3.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/3.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
+synthesis:  version Radiant Software (64-bit) 3.2.0.18.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Nov 17 11:48:50 2022
+
+
+Command Line:  C:\lscc\radiant\3.2\ispfpga\bin\nt64\synthesis.exe -f csi2cpi_test_impl_1_lattice.synproj -gui -msgset C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/promote.xml 
+
+Synthesis options:
+The -a option is LIFCL.
+The -t option is CABGA400.
+The -sp option is 8_High-Performance_1.0V.
+The -p option is LIFCL-40.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : LIFCL
+
+
+### Device             : LIFCL-40
+
+
+### Package            : CABGA400
+
+
+### Performance Grade  : 8_High-Performance_1.0V
+
+
+                                                         
+
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = rxdphy.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = yes
+Output HDL file name = csi2cpi_test_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-sdc option: SDC file input is C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/constraints/rxdphy.ldc.
+Hardtimer checking is enabled (default). The -dt option is not used.
+-path C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test (searchpath added)
+-path C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/impl_1 (searchpath added)
+-path C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy (searchpath added)
+-path C:/lscc/radiant/3.2/ispfpga/je5d00/data (searchpath added)
+Mixed language design
+Verilog design file = C:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v
+Verilog design file = C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v. VERI-1482
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(1): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_addsub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(2): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_add.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(3): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(4): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_counter.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(5): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_distributed_dpram.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_distributed_dpram.v(43): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/distributed_dpram/rtl/lscc_distributed_dpram.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(6): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_distributed_spram.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_distributed_spram.v(42): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/distributed_spram/rtl/lscc_distributed_spram.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(7): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_distributed_rom.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_distributed_rom.v(42): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/distributed_rom/rtl/lscc_distributed_rom.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(8): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_distributed_shift_reg.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_distributed_shift_reg.v(41): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/ram_shift_reg/rtl/lscc_shift_register.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(9): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_fifo.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(10): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(11): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_mac.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(12): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(13): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(14): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_mult.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(15): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(16): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(17): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dp_true.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dp_true.v(49): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/ram_dp_true/rtl/lscc_ram_dp_true.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(18): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(19): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(20): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_rom.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v(21): analyzing included file c:/lscc/radiant/3.2/ip/pmi/pmi_sub.v. VERI-1328
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/3.2/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+Analyzing Verilog file c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v. VERI-1482
+Analyzing VHDL file c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.vhd
+
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.vhd(4): analyzing package components. VHDL-1014
+INFO - synthesis: The default VHDL library search path is now "C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/impl_1". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): rxdphy
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(11): compiling module rxdphy. VERI-1018
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): compiling module rxdphy_ipgen_lscc_dphy_rx(AXI4="ON",NUM_RX_LANE=2,DPHY_RX_IP="MIXEL",BYTECLK_MHZ=100,BYTECLK_MHZ_FLOAT=100.0,SYNCCLK_MHZ=60.0,TEST_PATTERN="0b10000000001000000000000000000000",LANE_ALIGN="OFF",DATA_SETTLE_CYC=12,FIFO_DEPTH=4,FIFO_TYPE="EBR",T_DATA_SETTLE="0b000110",T_CLK_SETTLE="0b001001",RX_FIFO_DEPTH=128,RX_FIFO_PKT_DLY=8,RX_FIFO_CTR_WIDTH=4,NUM_QUE_ENT=4). VERI-1018
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): compiling module rxdphy_ipgen_lscc_axi_stream_master(NUM_LANE=2). VERI-1018
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): compiling module rxdphy_ipgen_lscc_synchronizer_rx. VERI-1018
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): compiling module rxdphy_ipgen_lscc_synchronizer_rx(REG_COUNT=2). VERI-1018
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): compiling module rxdphy_ipgen_lscc_dphy_rx_core(RX_TYPE="CSI2",NUM_RX_LANE=2,RX_GEAR=8,RX_CLK_MODE="HS_ONLY",LANE_ALIGN="OFF",BYTECLK_MHZ=100,SYNCCLK_MHZ=60.0,TEST_PATTERN="0b10000000001000000000000000000000",DATA_SETTLE_CYC=12,FIFO_DEPTH=4,RX_FIFO_DEPTH=128,RX_FIFO_PKT_DLY=8,RX_FIFO_CTR_WIDTH=4). VERI-1018
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(5296): compiling module rxdphy_ipgen_lscc_dphy_rx_wrap(NUM_RX_LANE=2,RX_GEAR=8,RX_TYPE="CSI2",RX_CLK_MODE="HS_ONLY",BYTECLK_MHZ=100,SYNCCLK_MHZ=60.0,TEST_PATTERN="0b10000000001000000000000000000000",FIFO_DEPTH=4,RX_FIFO_DEPTH=128,RX_FIFO_PKT_DLY=8,RX_FIFO_CTR_WIDTH=4). VERI-1018
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(5862): expression size 64 truncated to fit in target size 8. VERI-1209
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): compiling module rxdphy_ipgen_lscc_rx_fifo(RX_FIFO_IMPL="PINGPONG",NUM_RX_LANE=2,PMI_FAMILY="LIFCL",FR_FIFO_DEPTH=128,FR_PKT_DLY=8,CTR_WIDTH=4). VERI-1018
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): compiling module rxdphy_ipgen_lscc_rx_fifo_pp(NUM_RX_LANE=2,PMI_FAMILY="LIFCL",FR_FIFO_DEPTH=128,CTR_WIDTH=4,FR_PKT_DLY=8). VERI-1018
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): expression size 32 truncated to fit in target size 4. VERI-1209
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_fifo_dc.v(52): compiling module pmi_fifo_dc(pmi_data_width_w=16,pmi_data_width_r=16,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=1,pmi_family="LIFCL"). VERI-1018
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(57): compiling module lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=16,RADDR_DEPTH=128,RDATA_WIDTH=16,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1). VERI-1018
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo/rtl/lscc_fifo.v(255): compiling module lscc_fifo_fwft_fabric(REGMODE="reg",DWID=16). VERI-1018
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(419): compiling module lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=16,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=16,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1). VERI-1018
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3043): compiling module lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=16,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=16,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1). VERI-1018
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3860): compiling module lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=16,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=16,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1). VERI-1018
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(4280): compiling module lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=16,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=16,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1). VERI-1018
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(7270): compiling module lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b010010,DATA_WIDTH_R=32'b010010,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0). VERI-1018
+INFO - synthesis: C:/lscc/radiant/3.2/ispfpga/../cae_library/synthesis/verilog/LIFCL.v(8960): compiling module PDP16K(DATA_WIDTH_W="X18",DATA_WIDTH_R="X18",OUTREG="USED",RESETMODE="ASYNC",ASYNC_RST_RELEASE="ASYNC",INIT_DATA="DYNAMIC"). VERI-1018
+Removed duplicate sequential element wr_addr_arith_r(8 bit), because it is equivalent to wr_addr_r
+
+Removed duplicate sequential element rd_addr_arith_r(8 bit), because it is equivalent to rd_addr_r
+
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/pmi_fifo_dc.v(52): compiling module pmi_fifo_dc(pmi_data_width_w=16,pmi_data_width_r=16,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=2,pmi_family="LIFCL"). VERI-1018
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(57): compiling module lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=16,RADDR_DEPTH=128,RDATA_WIDTH=16,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2). VERI-1018
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(419): compiling module lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=16,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=16,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2). VERI-1018
+INFO - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3043): compiling module lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=16,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=16,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2). VERI-1018
+Removed duplicate sequential element wr_addr_arith_r(8 bit), because it is equivalent to wr_addr_r
+
+Removed duplicate sequential element rd_addr_arith_r(8 bit), because it is equivalent to rd_addr_r
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(5974): expression size 6 truncated to fit in target size 4. VERI-1209
+INFO - synthesis: C:/lscc/radiant/3.2/ispfpga/../cae_library/synthesis/verilog/LIFCL.v(2544): compiling module DPHY(GSR="DISABLED",CFG_NUM_LANES="TWO_LANES",CONT_CLK_MODE="ENABLED",EN_CIL="CIL_BYPASSED",PLLCLKBYPASS="BYPASSED",RXCDRP="0b01",RXLPRP="0b001",TEST_PATTERN="0b10000000001000000000000000000000",TST="0b0000"). VERI-1018
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(5612): net byte_data_line2_fifo_out_w[7] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(5613): net byte_data_line3_fifo_out_w[7] does not have a driver. VDB-1002
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): compiling module rxdphy_ipgen_lscc_rx_global_ctrl(NUM_RX_LANE=2,DATA_SETTLE_CYC=12,RX_CLK_MODE="HS_ONLY"). VERI-1018
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): compiling module rxdphy_ipgen_lscc_lp_hs_ctrl. VERI-1018
+INFO - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): compiling module rxdphy_ipgen_lscc_capture_ctrl(NUM_RX_LANE=2,RX_GEAR=8,RX_TYPE="CSI2"). VERI-1018
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): net d_p_w[3] does not have a driver. VDB-1002
+                                                         
+
+
+### Number of Logic Cells: 32256
+
+
+### Number of RAM Blocks: 84
+
+
+### Number of DSP Blocks: 462
+
+
+### Number of PLLs: 3
+
+
+### Number of IO Pins: 185
+
+
+##########################################################
+
+
+                                                         
+
+
+WARNING - synthesis: Bit 15 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 14 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 13 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 12 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 11 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 10 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 9 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 8 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 7 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 6 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 5 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 4 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 3 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 2 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 1 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: Bit 0 of Register wc_cand_off1_p4_r is stuck at Zero
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(5612): net byte_data_line2_fifo_out_w[7] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(5613): net byte_data_line3_fifo_out_w[7] does not have a driver. VDB-1002
+WARNING - synthesis: I/O Port encrypted_port 's net has no driver and is unused.
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/u1_synchronizer/reset_mem is stuck at One
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/u1_synchronizer/reset_mem is stuck at One
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/u1_synchronizer/reset_mem is stuck at One
+INFO - synthesis: Extracted state machine for register 'encrypted_netlist' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+INFO - synthesis: Extracted state machine for register 'encrypted_netlist' with one-hot encoding
+State machine has 4 reachable states with original encodings of:
+
+ 00 
+
+ 01 
+
+ 10 
+
+ 11 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+
+
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3167): Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wp_sync2_r_7__I_0_9_add_2_i2 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3123): Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_i17 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/add_289_i2 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3527): Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/add_107_i17 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at One
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3151): Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_i2 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_e2 is stuck at One
+WARNING - synthesis: Bit 13 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_133_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_133_add_12_e1 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_331_e1 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_331_e2 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_331_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register add_330_e1 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_330_e2 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_330_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_330_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_330_add_12_add_12_e1 is stuck at One
+WARNING - synthesis: Bit 13 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/bd_i_15__I_0_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 14 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 13 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 12 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 11 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 10 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 9 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 8 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/capture_ctrl_inst.capture_ctrl_inst/sub_119_add_2_e2 is stuck at One
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3123): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: Bit 15 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 14 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 13 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 12 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 11 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 10 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 9 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 8 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/rx_global_ctrl_inst/sub_17_add_2_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: Bit 0 of Register add_329_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3123): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: Bit 0 of Register add_331_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3151): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3151): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_330_add_12_add_12_add_12_e1 is stuck at One
+WARNING - synthesis: Bit 0 of Register add_330_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3167): Clock on register add_330_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: Bit 0 of Register add_331_add_12_add_12_add_12_e1 is stuck at One
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3167): Clock on register add_331_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: Bit 7 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_e2 is stuck at One
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3167): Clock on register add_331_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3167): Clock on register add_330_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3151): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3151): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3123): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3123): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3123): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3123): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: Bit 0 of Register add_330_add_12_add_12_add_12_e3 is stuck at Zero
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3151): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3151): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3167): Clock on register add_330_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3167): Clock on register add_331_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3167): Clock on register add_331_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3167): Clock on register add_330_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3151): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3151): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_7__I_0_2_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3123): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v(0): Clock on register ** is tied to a constant
+
+WARNING - synthesis: c:/lscc/radiant/3.2/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v(3123): Clock on register \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_7__I_0_3_add_12_add_12_add_12_add_12_add_12_add_12_i8 is tied to a constant
+
+WARNING - synthesis: I/O Port encrypted_port 's net has no driver and is unused.
+WARNING - synthesis: I/O Port encrypted_port 's net has no driver and is unused.
+WARNING - synthesis: Skipping pad insertion on encrypted_port due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on encrypted_port due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on encrypted_port due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on encrypted_port due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on encrypted_port due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on encrypted_port due to black_box_pad_pin attribute.
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp1 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i2
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i1
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i2
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp1 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i0
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i0
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i1
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i1
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i2
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i2
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i3
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i3
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i4
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i4
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i5
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i5
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i6
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i6
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i7
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i7
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp1 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i0
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i0
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp1 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i1
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i0
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i1
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp1 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/full_ext_r
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp1 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i3
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i2
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i3
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp1 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i4
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i3
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i4
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp1 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i5
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i4
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i5
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp1 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i6
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i5
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i6
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp1 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i7
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i6
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i7
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp0 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i2
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i1
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i2
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp0 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i0
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i0
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i1
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i1
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i2
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i2
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i3
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i3
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i4
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i4
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i5
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i5
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i6
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i6
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_grey_sync_r_i7
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_r_i7
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp0 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i0
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i0
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp0 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i1
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i0
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i1
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp0 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/full_ext_r
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp0 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i3
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i2
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i3
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp0 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i4
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i3
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i4
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp0 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i5
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i4
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i5
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp0 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i6
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i5
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i6
+
+
+Optimized async. reset : \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/reset_pp0 on data cone feeding flop : 
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i7
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_grey_sync_r_i6
+
+
+ \lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_0/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_addr_r_i7
+
+
+Duplicate register/latch removal. encrypted_netlist is a one-to-one match with encrypted_netlist.
+Duplicate register/latch removal. encrypted_netlist is a one-to-one match with encrypted_netlist.
+Duplicate register/latch removal. encrypted_netlist is a one-to-one match with encrypted_netlist.
+Duplicate register/latch removal. encrypted_netlist is a one-to-one match with encrypted_netlist.
+Duplicate register/latch removal. encrypted_netlist is a one-to-one match with encrypted_netlist.
+Duplicate register/latch removal. encrypted_netlist is a one-to-one match with encrypted_netlist.
+GSR instance connected to net encrypted_port.
+Starting design annotation....
+
+Starting full timing analysis...
+Starting design annotation....
+
+Starting full timing analysis...
+Starting design annotation....
+
+Starting full timing analysis...
+Starting design annotation....
+
+Starting full timing analysis...
+WARNING - synthesis: Removing unused instance GSR_INST. VDB-5034
+
+
+<A name="lse_area"></A><B><U><big>Area Report</big></U></B>
+
+################### Begin Area Report (rxdphy)######################
+Number of register bits => 488 of 32256 (1 % )
+CCU2 => 64
+DPHY => 1
+FD1P3BX => 21
+FD1P3DX => 414
+FD1P3IX => 48
+FD1P3JX => 5
+GSR => 1
+IB => 11
+INV => 2
+LUT4 => 341
+OB => 75
+PDP16K => 2
+WIDEFN9 => 20
+################### End Area Report ##################
+Number of odd-length carry chains : 1
+Number of even-length carry chains : 9
+
+
+<A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 5
+  Net : clk_byte_fr_i_c, loads : 406
+  Net : lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/CK, loads : 67
+  Net : lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/clk_n_io, loads : 1
+  Net : lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/clk_p_io, loads : 1
+  Net : lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/UCRXWCHS, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 18
+Top 10 highest fanout Clock Enables:
+  Net : secured_path.secured_net, loads : 32
+  Net : secured_path.secured_net, loads : 21
+  Net : secured_path.secured_net, loads : 16
+  Net : secured_path.secured_net, loads : 10
+  Net : lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/clk_byte_fr_i_c_enable_57, loads : 10
+  Net : lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/u_rx_fifo/rx_fifo_pp.rx_fifo_pp_inst/fr_fifo_1/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_addr_nxt_c_7__N_167, loads : 10
+  Net : secured_path.secured_net, loads : 10
+  Net : secured_path.secured_net, loads : 3
+  Net : VCC_net, loads : 2
+  Net : secured_path.secured_net, loads : 2
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : VCC_net, loads : 1000
+  Net : secured_path.secured_net, loads : 69
+  Net : secured_path.secured_net, loads : 69
+  Net : secured_path.secured_net, loads : 53
+  Net : secured_path.secured_net, loads : 37
+  Net : secured_path.secured_net, loads : 32
+  Net : secured_path.secured_net, loads : 21
+  Net : secured_path.secured_net, loads : 21
+  Net : stb_data_neg_15__N_94, loads : 18
+  Net : secured_path.secured_net, loads : 16
+################### End Clock Report ##################
+
+Peak Memory Usage: 269 MB
+
+--------------------------------------------------------------
+Total CPU Time: 4 secs 
+Total REAL Time: 5 secs 
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#Syn>Top</A></LI>
+<LI><A href=#lse_area>Area Report</A></LI>
+<LI><A href=#lse_clock>Clock Report</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

@@ -1,0 +1,436 @@
+----------------------------------------------------------------------
+Report for cell test_simulation.TECH
+Register bits:  667 of 32256 (2.068%)
+I/O cells:      122
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        96          100.0
+                               DPHY         1          100.0
+                            FD1P3BX        21          100.0
+                            FD1P3DX       585          100.0
+                            FD1P3IX        56          100.0
+                            FD1P3JX         5          100.0
+                                GSR         1          100.0
+                                 IB        11          100.0
+                                INV         2          100.0
+                               LUT4       566          100.0
+                                 OB       111          100.0
+                             PDP16K         2          100.0
+                            WIDEFN9        25          100.0
+SUB MODULES
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=1,pmi_family="LIFCL")         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=2,pmi_family="LIFCL")         1
+                     secured_module         1
+                              TOTAL      1496
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        96          100.0
+                               DPHY         1          100.0
+                            FD1P3BX        21          100.0
+                            FD1P3DX       585          100.0
+                            FD1P3IX        56          100.0
+                            FD1P3JX         5          100.0
+                               LUT4       566          100.0
+                             PDP16K         2          100.0
+                            WIDEFN9        25          100.0
+SUB MODULES
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=1,pmi_family="LIFCL")         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=2,pmi_family="LIFCL")         1
+                     secured_module         1
+                              TOTAL      1371
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         5           23.8
+                               LUT4         1            0.2
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         5           23.8
+                               LUT4         2            0.4
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        96          100.0
+                               DPHY         1          100.0
+                            FD1P3BX        11           52.4
+                            FD1P3DX       520           88.9
+                            FD1P3IX        56          100.0
+                            FD1P3JX         5          100.0
+                               LUT4       563           99.5
+                             PDP16K         2          100.0
+                            WIDEFN9        25          100.0
+SUB MODULES
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=1,pmi_family="LIFCL")         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=2,pmi_family="LIFCL")         1
+                     secured_module         1
+                              TOTAL      1293
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        30           31.2
+                               DPHY         1          100.0
+                            FD1P3BX         6           28.6
+                            FD1P3DX       226           38.6
+                            FD1P3IX        14           25.0
+                            FD1P3JX         3           60.0
+                               LUT4       237           41.9
+                             PDP16K         2          100.0
+                            WIDEFN9         4           16.0
+SUB MODULES
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=1,pmi_family="LIFCL")         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=2,pmi_family="LIFCL")         1
+                     secured_module         1
+                              TOTAL       537
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        30           31.2
+                            FD1P3BX         6           28.6
+                            FD1P3DX       178           30.4
+                            FD1P3IX         6           10.7
+                            FD1P3JX         3           60.0
+                               LUT4       236           41.7
+                             PDP16K         2          100.0
+                            WIDEFN9         4           16.0
+SUB MODULES
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=1,pmi_family="LIFCL")         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=2,pmi_family="LIFCL")         1
+                     secured_module         1
+                              TOTAL       479
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        30           31.2
+                            FD1P3BX         6           28.6
+                            FD1P3DX       178           30.4
+                            FD1P3IX         6           10.7
+                            FD1P3JX         3           60.0
+                               LUT4       236           41.7
+                             PDP16K         2          100.0
+                            WIDEFN9         4           16.0
+SUB MODULES
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=1,pmi_family="LIFCL")         1
+pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=2,pmi_family="LIFCL")         1
+                     secured_module         1
+                              TOTAL       479
+----------------------------------------------------------------------
+Report for cell pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=2,pmi_family="LIFCL").v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        15           15.6
+                            FD1P3BX         2            9.5
+                            FD1P3DX        65           11.1
+                               LUT4        80           14.1
+                             PDP16K         1           50.0
+                            WIDEFN9         2            8.0
+SUB MODULES
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+                     secured_module         1
+                              TOTAL       171
+----------------------------------------------------------------------
+Report for cell lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2).v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_1.u_fifo0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        15           15.6
+                            FD1P3BX         2            9.5
+                            FD1P3DX        65           11.1
+                               LUT4        80           14.1
+                             PDP16K         1           50.0
+                            WIDEFN9         2            8.0
+SUB MODULES
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+                     secured_module         1
+                              TOTAL       170
+----------------------------------------------------------------------
+Report for cell lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_ASSERT_LVL=2).v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_1.u_fifo0.fifo_dc0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        15           15.6
+                            FD1P3BX         2            9.5
+                            FD1P3DX        65           11.1
+                               LUT4        80           14.1
+                             PDP16K         1           50.0
+                            WIDEFN9         2            8.0
+SUB MODULES
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+                     secured_module         1
+                              TOTAL       169
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        15           15.6
+                            FD1P3BX         2            9.5
+                            FD1P3DX        65           11.1
+                               LUT4        80           14.1
+                             PDP16K         1           50.0
+                            WIDEFN9         2            8.0
+SUB MODULES
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+                              TOTAL       168
+----------------------------------------------------------------------
+Report for cell lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1).v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_1.u_fifo0.fifo_dc0._FABRIC.u_fifo.EBR.genblk1.u_fifo_mem0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX         1            0.2
+                             PDP16K         1           50.0
+SUB MODULES
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1).v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_1.u_fifo0.fifo_dc0._FABRIC.u_fifo.EBR.genblk1.u_fifo_mem0.mem_main
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX         1            0.2
+                             PDP16K         1           50.0
+SUB MODULES
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)         1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0).v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_1.u_fifo0.fifo_dc0._FABRIC.u_fifo.EBR.genblk1.u_fifo_mem0.mem_main.NON_MIX.ADDR_ROUTE[0].DATA_ROUTE[0].no_init.u_mem0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             PDP16K         1           50.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell pmi_fifo_dc(pmi_data_width_w=32,pmi_data_width_r=32,pmi_data_depth_w=128,pmi_data_depth_r=128,pmi_full_flag=128,pmi_almost_full_flag=127,pmi_almost_empty_flag=1,pmi_family="LIFCL").v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        15           15.6
+                            FD1P3BX         2            9.5
+                            FD1P3DX        65           11.1
+                               LUT4        79           14.0
+                             PDP16K         1           50.0
+                            WIDEFN9         2            8.0
+SUB MODULES
+lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+                              TOTAL       170
+----------------------------------------------------------------------
+Report for cell lscc_fifo_dc(WADDR_DEPTH=128,WDATA_WIDTH=32,RADDR_DEPTH=128,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1).v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_0.u_fifo0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        15           15.6
+                            FD1P3BX         2            9.5
+                            FD1P3DX        65           11.1
+                               LUT4        79           14.0
+                             PDP16K         1           50.0
+                            WIDEFN9         2            8.0
+SUB MODULES
+lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+                              TOTAL       169
+----------------------------------------------------------------------
+Report for cell lscc_fifo_dc_main(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1).v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_0.u_fifo0.fifo_dc0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        15           15.6
+                            FD1P3BX         2            9.5
+                            FD1P3DX        65           11.1
+                               LUT4        79           14.0
+                             PDP16K         1           50.0
+                            WIDEFN9         2            8.0
+SUB MODULES
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1)         1
+                              TOTAL       168
+----------------------------------------------------------------------
+Report for cell lscc_soft_fifo_dc(WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,ALMOST_FULL_ASSERT_LVL=127,ALMOST_FULL_DEASSERT_LVL=127,ALMOST_EMPTY_DEASSERT_LVL=1).v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_0.u_fifo0.fifo_dc0._FABRIC.u_fifo
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        15           15.6
+                            FD1P3BX         2            9.5
+                            FD1P3DX        65           11.1
+                               LUT4        79           14.0
+                             PDP16K         1           50.0
+                            WIDEFN9         2            8.0
+SUB MODULES
+lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2         1
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+                              TOTAL       167
+----------------------------------------------------------------------
+Report for cell lscc_fifo_mem(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_WIDTH=1)_U2.v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_0.u_fifo0.fifo_dc0._FABRIC.u_fifo.EBR.genblk1.u_fifo_mem0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX         1            0.2
+                             PDP16K         1           50.0
+SUB MODULES
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell lscc_fifo_mem_main(FAMILY="LIFCL",WADDR_DEPTH=128,WADDR_WIDTH=32'b0111,WDATA_WIDTH=32,RADDR_DEPTH=128,RADDR_WIDTH=32'b0111,RDATA_WIDTH=32,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=0,BYTE_SIZE=9,BYTE_WIDTH=1)_U1.v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_0.u_fifo0.fifo_dc0._FABRIC.u_fifo.EBR.genblk1.u_fifo_mem0.mem_main
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX         1            0.2
+                             PDP16K         1           50.0
+SUB MODULES
+lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0         1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell lscc_fifo_mem_core(MEM_SIZE="18,1024",FAMILY="LIFCL",DATA_WIDTH_W=32'b0100100,DATA_WIDTH_R=32'b0100100,RESETMODE="async",RESET_RELEASE="async",BYTE_ENABLE=1'b0,POSx=32'b0,POSy=32'b0)_U0.v1
+Instance Path : lscc_dphy_rx_inst.NOCIL_TOP.u_dphy_rx_core.u_dphy_rx_wrap.u_rx_fifo.rx_fifo_pp.rx_fifo_pp_inst.fr_fifo_0.u_fifo0.fifo_dc0._FABRIC.u_fifo.EBR.genblk1.u_fifo_mem0.mem_main.NON_MIX.ADDR_ROUTE[0].DATA_ROUTE[0].no_init.u_mem0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             PDP16K         1           50.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2         9            9.4
+                            FD1P3BX         5           23.8
+                            FD1P3DX         6            1.0
+                            FD1P3IX        14           25.0
+                            FD1P3JX         2           40.0
+                               LUT4        21            3.7
+SUB MODULES
+                     secured_module         1
+                              TOTAL        58
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3BX         5           23.8
+                            FD1P3DX         5            0.9
+                               LUT4        14            2.5
+                              TOTAL        24
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        57           59.4
+                            FD1P3DX       288           49.2
+                            FD1P3IX        28           50.0
+                               LUT4       305           53.9
+                            WIDEFN9        21           84.0
+                              TOTAL       699
+----------------------------------------------------------------------
+Report for cell secured_cell.secured_netlist
+Instance Path : secured_path
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3DX        65           11.1
+                              TOTAL        65

@@ -1,0 +1,6 @@
+-ver "C:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.vhd"
+-sver "C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI/source/impl_1/axi4s_slave_if.sv" "C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI/source/impl_1/payload_unpack.sv" "C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI/source/impl_1/sync_unpack.sv" "C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI/source/impl_1/csi2cpi_wrapper.sv"
+-top myB2P
+-isTop
+-a "LIFCL"

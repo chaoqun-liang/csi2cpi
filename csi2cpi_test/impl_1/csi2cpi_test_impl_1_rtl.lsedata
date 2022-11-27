@@ -1,0 +1,22 @@
+<top name = "rxdphy"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "clk_p_io"  type = "net" />
+    <clockitem name = "clk_n_io"  type = "net" />
+    <clockitem name = "clk_byte_fr_i"  type = "port" />
+    <clockitem name = "clk_byte_o"  type = "net" />
+    <clockitem name = "clk_byte_hs_o"  type = "net" />
+    <clockitem name = "lscc_dphy_rx_inst/NOCIL_TOP.u_dphy_rx_core/u_dphy_rx_wrap/lp_d0_tx_en_i_N_16"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 6
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+</top>

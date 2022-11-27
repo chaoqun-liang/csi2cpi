@@ -1,0 +1,7 @@
+-ver "C:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.v"
+-lib pmi -vhd "C:/lscc/radiant/3.2/ip/pmi/pmi_lifcl.vhd"
+-ver "C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI/myB2P/rtl/myB2P.v"
+-sdc  "C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI/myB2P/constraints/myB2P.ldc"
+-path "C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI/myB2P"
+-top myB2P
+-a "LIFCL"

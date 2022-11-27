@@ -1,0 +1,24 @@
+if {![file exists "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/sim2/sim2.mpf"]} { 
+	project new "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/sim2" sim2
+	project addfile "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/bus_driver.v" verilog
+	project addfile "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/clk_driver.v" verilog
+	project addfile "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/csi2_model.v" verilog
+	project addfile "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/rtl/test_simulation.v" verilog
+	project addfile "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v" verilog
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+
+	vlog  +incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench" -work work  "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/bus_driver.v"
+	vlog  +incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench" -work work  "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/clk_driver.v"
+	vlog  +incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench" -work work  "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/csi2_model.v"
+	vlog  +incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/rtl" -work work  "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/rtl/test_simulation.v"
+	vlog  +incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench" -work work  "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v"
+} else {
+	project open "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/sim2/sim2"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -lib work -L pmi_work -L ovi_lifcl  tb_top 
+view wave
+add wave /*
+run 100 ns

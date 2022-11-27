@@ -1,0 +1,538 @@
+PAD Specification File
+***************************
+
+PART TYPE:        LIFCL-40
+Performance Grade:      8_High-Performance_1.0V
+PACKAGE:          CABGA400
+Package Status:                     Final          Version 39
+
+Fri Nov 18 14:02:39 2022
+
+Pinout by Port Name:
++-------------------+----------+---------------+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| Port Name         | Pin/Bank | Buffer Type   | Site      | Properties                                                                                                                                         |
++-------------------+----------+---------------+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+| axis_mtdata_o[0]  | N14/2    | LVCMOS33_OUT  | PR24A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[10] | R18/2    | LVCMOS33_OUT  | PR40B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[11] | G15/1    | LVCMOS33_OUT  | PR15B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[12] | V19/2    | LVCMOS33_OUT  | PR47B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[13] | N5/6     | LVCMOS33_OUT  | PL40B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[14] | M18/2    | LVCMOS33_OUT  | PR30B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[15] | U20/2    | LVCMOS33_OUT  | PR42A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[16] | E16/0    | LVCMOS33_OUT  | PT82B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[17] | L1/6     | LVCMOS33_OUT  | PL27A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[18] | U18/2    | LVCMOS33_OUT  | PR46B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[19] | M14/2    | LVCMOS33_OUT  | PR24B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[1]  | L7/6     | LVCMOS33_OUT  | PL32A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[20] | Y19/2    | LVCMOS33_OUT  | PR49B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[21] | M3/6     | LVCMOS33_OUT  | PL34B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[22] | W20/2    | LVCMOS33_OUT  | PR44A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[23] | R17/2    | LVCMOS33_OUT  | PR40A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[24] | F14/1    | LVCMOS33_OUT  | PR6A      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[25] | L19/1    | LVCMOS33_OUT  | PR20B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[26] | V20/2    | LVCMOS33_OUT  | PR44B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[27] | E8/7     | LVCMOS33_OUT  | PL11B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[28] | N20/2    | LVCMOS33_OUT  | PR34B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[29] | R3/6     | LVCMOS33_OUT  | PL49A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[2]  | V18/2    | LVCMOS33_OUT  | PR47A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[30] | G14/1    | LVCMOS33_OUT  | PR15A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[31] | P19/2    | LVCMOS33_OUT  | PR36A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[32] | D14/0    | LVCMOS33_OUT  | PT80B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[33] | M7/6     | LVCMOS33_OUT  | PL38B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[34] | P18/2    | LVCMOS33_OUT  | PR38B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[35] | P17/2    | LVCMOS33_OUT  | PR38A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[36] | M6/6     | LVCMOS33_OUT  | PL38A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[37] | P1/6     | LVCMOS33_OUT  | PL44A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[38] | M15/2    | LVCMOS33_OUT  | PR26B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[39] | M5/6     | LVCMOS33_OUT  | PL36B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[3]  | E18/0    | LVCMOS33_OUT  | PT84A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[40] | E7/7     | LVCMOS33_OUT  | PL11A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[41] | E4/7     | LVCMOS33_OUT  | PL13A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[42] | D16/0    | LVCMOS33_OUT  | PT82A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[43] | E13/0    | LVCMOS33_OUT  | PT78A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[44] | K3/7     | LVCMOS33_OUT  | PL20A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[45] | K2/7     | LVCMOS33_OUT  | PL19A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[46] | G13/1    | LVCMOS33_OUT  | PR4B      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[47] | E17/1    | LVCMOS33_OUT  | PR3B      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[48] | E3/7     | LVCMOS33_OUT  | PL13B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[49] | L13/1    | LVCMOS33_OUT  | PR17A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[4]  | M19/2    | LVCMOS33_OUT  | PR32A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[50] | E2/7     | LVCMOS33_OUT  | PL15A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[51] | J2/7     | LVCMOS33_OUT  | PL17A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[52] | K1/7     | LVCMOS33_OUT  | PL19B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[53] | F1/7     | LVCMOS33_OUT  | PL15B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[54] | F13/1    | LVCMOS33_OUT  | PR4A      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[55] | K4/7     | LVCMOS33_OUT  | PL20B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[56] | K5/6     | LVCMOS33_OUT  | PL24A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[57] | L2/6     | LVCMOS33_OUT  | PL27B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[58] | N6/6     | LVCMOS33_OUT  | PL42A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[59] | L16/1    | LVCMOS33_OUT  | PR19A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[5]  | P2/6     | LVCMOS33_OUT  | PL44B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[60] | K8/6     | LVCMOS33_OUT  | PL26B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[61] | P6/6     | LVCMOS33_OUT  | PL46B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[62] | L5/6     | LVCMOS33_OUT  | PL30A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[63] | N15/2    | LVCMOS33_OUT  | PR27A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[6]  | M17/2    | LVCMOS33_OUT  | PR30A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[7]  | N7/6     | LVCMOS33_OUT  | PL42B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[8]  | D13/0    | LVCMOS33_OUT  | PT78B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtdata_o[9]  | M16/2    | LVCMOS33_OUT  | PR26A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| axis_mtvalid_o    | G19/1    | LVCMOS33_OUT  | PR13B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[0]           | P11/4    | LVCMOS18H_OUT | PB46A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF |
+| bd_o[10]          | T20/2    | LVCMOS33_OUT  | PR42B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[11]          | D15/0    | LVCMOS33_OUT  | PT80A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[12]          | N19/2    | LVCMOS33_OUT  | PR34A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[13]          | R4/6     | LVCMOS33_OUT  | PL49B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[14]          | M20/2    | LVCMOS33_OUT  | PR32B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[15]          | W19/2    | LVCMOS33_OUT  | PR49A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[16]          | L14/1    | LVCMOS33_OUT  | PR17B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[17]          | L6/6     | LVCMOS33_OUT  | PL30B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[18]          | P5/6     | LVCMOS33_OUT  | PL46A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[19]          | F16/1    | LVCMOS33_OUT  | PR8A      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[1]           | R10/4    | LVCMOS18H_OUT | PB34B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF |
+| bd_o[20]          | P20/2    | LVCMOS33_OUT  | PR36B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[21]          | R2/6     | LVCMOS33_OUT  | PL47B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[22]          | N16/2    | LVCMOS33_OUT  | PR27B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[23]          | R1/6     | LVCMOS33_OUT  | PL47A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[24]          | L15/1    | LVCMOS33_OUT  | PR19B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[25]          | K7/6     | LVCMOS33_OUT  | PL26A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[26]          | M2/6     | LVCMOS33_OUT  | PL34A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[27]          | E20/1    | LVCMOS33_OUT  | PR11A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[28]          | F18/1    | LVCMOS33_OUT  | PR10A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[29]          | N4/6     | LVCMOS33_OUT  | PL40A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[2]           | W11/3    | LVCMOS18H_OUT | PB54A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF |
+| bd_o[30]          | L20/1    | LVCMOS33_OUT  | PR20A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[31]          | M4/6     | LVCMOS33_OUT  | PL36A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[3]           | V11/3    | LVCMOS18H_OUT | PB56A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF |
+| bd_o[4]           | Y12/3    | LVCMOS18H_OUT | PB58A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF |
+| bd_o[5]           | V9/4     | LVCMOS18H_OUT | PB36B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF |
+| bd_o[6]           | T18/2    | LVCMOS33_OUT  | PR46A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[7]           | L8/6     | LVCMOS33_OUT  | PL32B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[8]           | F20/1    | LVCMOS33_OUT  | PR11B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| bd_o[9]           | K6/6     | LVCMOS33_OUT  | PL24B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| clk_byte_fr_i     | E12/0    | LVCMOS33_IN   | PT76A     | DRIVE:NA SLEW:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF     |
+| clk_byte_hs_o     | D7/7     | LVCMOS33_OUT  | PL4A      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| clk_byte_o        | D17/0    | LVCMOS33_OUT  | PT84B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| clk_n_io          | B1/60    | HSIO          | DPHY0_CKN |                                                                                                                                                    |
+| clk_p_io          | A2/60    | HSIO          | DPHY0_CKP |                                                                                                                                                    |
+| d_n_io[0]         | C1/60    | HSIO          | DPHY0_DN0 |                                                                                                                                                    |
+| d_n_io[1]         | B3/60    | HSIO          | DPHY0_DN1 |                                                                                                                                                    |
+| d_n_io[2]         | D1/60    | HSIO          | DPHY0_DN2 |                                                                                                                                                    |
+| d_n_io[3]         | B4/60    | HSIO          | DPHY0_DN3 |                                                                                                                                                    |
+| d_p_io[0]         | B2/60    | HSIO          | DPHY0_DP0 |                                                                                                                                                    |
+| d_p_io[1]         | A3/60    | HSIO          | DPHY0_DP1 |                                                                                                                                                    |
+| d_p_io[2]         | C2/60    | HSIO          | DPHY0_DP2 |                                                                                                                                                    |
+| d_p_io[3]         | A4/60    | HSIO          | DPHY0_DP3 |                                                                                                                                                    |
+| hs_sync_o         | Y7/4     | LVCMOS18H_OUT | PB30A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF |
+| lp_av_en_o        | U10/4    | LVCMOS18H_OUT | PB42A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF |
+| lp_d_rx_n_o[0]    | D3/7     | LVCMOS33_OUT  | PL8B      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| lp_d_rx_n_o[1]    | D5/7     | LVCMOS33_OUT  | PL6B      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| lp_d_rx_n_o[2]    | D4/7     | LVCMOS33_OUT  | PL8A      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| lp_d_rx_n_o[3]    | D8/7     | LVCMOS33_OUT  | PL4B      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| lp_d_rx_p_o[0]    | E9/7     | LVCMOS33_OUT  | PL10B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| lp_d_rx_p_o[1]    | D6/7     | LVCMOS33_OUT  | PL6A      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| lp_d_rx_p_o[2]    | D9/7     | LVCMOS33_OUT  | PL3B      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| lp_d_rx_p_o[3]    | D10/7    | LVCMOS33_OUT  | PL3A      | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF  |
+| lp_en_o           | P9/4     | LVCMOS18H_OUT | PB32B     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF |
+| pd_dphy_i         | U6/4     | LVCMOS18H_IN  | PB16B     | DRIVE:NA SLEW:NA GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF   |
+| ref_dt_i[0]       | W8/4     | LVCMOS18H_IN  | PB36A     | DRIVE:NA SLEW:NA GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF   |
+| ref_dt_i[1]       | Y9/4     | LVCMOS18H_IN  | PB38B     | DRIVE:NA SLEW:NA GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF   |
+| ref_dt_i[2]       | W10/4    | LVCMOS18H_IN  | PB44A     | DRIVE:NA SLEW:NA GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF   |
+| ref_dt_i[3]       | T10/4    | LVCMOS18H_IN  | PB40A     | DRIVE:NA SLEW:NA GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF   |
+| ref_dt_i[4]       | T11/4    | LVCMOS18H_IN  | PB40B     | DRIVE:NA SLEW:NA GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF   |
+| ref_dt_i[5]       | W9/4     | LVCMOS18H_IN  | PB38A     | DRIVE:NA SLEW:NA GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF   |
+| reset_byte_fr_n_i | J1/7     | LVCMOS33_IN   | PL17B     | DRIVE:NA SLEW:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF     |
+| reset_n_i         | E10/7    | LVCMOS33_IN   | PL10A     | DRIVE:NA SLEW:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF     |
+| sp_en_o           | R9/4     | LVCMOS18H_OUT | PB32A     | DRIVE:8mA SLEW:MED GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:NONE VREF:OFF |
+| tx_rdy_i          | V6/4     | LVCMOS18H_IN  | PB20A     | DRIVE:NA SLEW:NA GLITCHFILTER:OFF HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS18H DIFFRESISTOR:OFF DIFFDRIVE:NA PULL:DOWN VREF:OFF   |
++-------------------+----------+---------------+-----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 0    | 3.3V  |
+| 1    | 3.3V  |
+| 2    | 3.3V  |
+| 3    | 1.8V  |
+| 4    | 1.8V  |
+| 6    | 3.3V  |
+| 7    | 3.3V  |
++------+-------+
+
+Vref by Bank:
++------+-----+-----------------+---------+
+| Vref | Pin | Bank # / Vref # | Load(s) |
++------+-----+-----------------+---------+
++------+-----+-----------------+---------+
+
+Pinout by Pin Number:
++---------------+-----------------------+------------+---------------+-------------+-----------------------------------------------------+
+| Pin/Bank      | Pin Info              | Preference | Buffer Type   | Site        | Dual Function                                       |
++---------------+-----------------------+------------+---------------+-------------+-----------------------------------------------------+
+| A2/60         | clk_p_io              |            |               | DPHY0_CKP   |                                                     |
+| A3/60         | d_p_io[1]             |            |               | DPHY0_DP1   |                                                     |
+| A4/60         | d_p_io[3]             |            |               | DPHY0_DP3   |                                                     |
+| A6/61         |                       |            |               | DPHY1_DP2   |                                                     |
+| A7/61         |                       |            |               | DPHY1_DP0   |                                                     |
+| A8/61         |                       |            |               | DPHY1_CKP   |                                                     |
+| A9/61         |                       |            |               | DPHY1_DP1   |                                                     |
+| A10/61        |                       |            |               | DPHY1_DP3   |                                                     |
+| A12/80        |                       |            |               | SD0_TXDN    |                                                     |
+| A13/80        |                       |            |               | SD0_TXDP    |                                                     |
+| A15/80        |                       |            |               | SD0_RXDN    |                                                     |
+| A16/80        |                       |            |               | SD0_RXDP    |                                                     |
+| B1/60         | clk_n_io              |            |               | DPHY0_CKN   |                                                     |
+| B2/60         | d_p_io[0]             |            |               | DPHY0_DP0   |                                                     |
+| B3/60         | d_n_io[1]             |            |               | DPHY0_DN1   |                                                     |
+| B4/60         | d_n_io[3]             |            |               | DPHY0_DN3   |                                                     |
+| B6/61         |                       |            |               | DPHY1_DN2   |                                                     |
+| B7/61         |                       |            |               | DPHY1_DN0   |                                                     |
+| B8/61         |                       |            |               | DPHY1_CKN   |                                                     |
+| B9/61         |                       |            |               | DPHY1_DN1   |                                                     |
+| B10/61        |                       |            |               | DPHY1_DN3   |                                                     |
+| B14/80        |                       |            |               | SD0_REFRET  |                                                     |
+| C1/60         | d_n_io[0]             |            |               | DPHY0_DN0   |                                                     |
+| C2/60         | d_p_io[2]             |            |               | DPHY0_DP2   |                                                     |
+| C14/80        |                       |            |               | SD0_REXT    |                                                     |
+| D1/60         | d_n_io[2]             |            |               | DPHY0_DN2   |                                                     |
+| D3/7          | lp_d_rx_n_o[0]        |            | LVCMOS33_OUT  | PL8B        | EIO                                                 |
+| D4/7          | lp_d_rx_n_o[2]        |            | LVCMOS33_OUT  | PL8A        | EIO                                                 |
+| D5/7          | lp_d_rx_n_o[1]        |            | LVCMOS33_OUT  | PL6B        | EIO                                                 |
+| D6/7          | lp_d_rx_p_o[1]        |            | LVCMOS33_OUT  | PL6A        | ULC_GPLL0T_MFGOUT2/EIO                              |
+| D7/7          | clk_byte_hs_o         |            | LVCMOS33_OUT  | PL4A        | ULC_GPLL0T_MFGOUT1/EIO                              |
+| D8/7          | lp_d_rx_n_o[3]        |            | LVCMOS33_OUT  | PL4B        | EIO                                                 |
+| D9/7          | lp_d_rx_p_o[2]        |            | LVCMOS33_OUT  | PL3B        | EIO                                                 |
+| D10/7         | lp_d_rx_p_o[3]        |            | LVCMOS33_OUT  | PL3A        | ULC_GPLL0T_IN/EIO                                   |
+| D11/0         | Reserved: sysCONFIG   |            |               | PT74A       | INITN                                               |
+| D12/0         | Reserved: sysCONFIG   |            |               | PT76B       | DONE/S0_OUT                                         |
+| D13/0         | axis_mtdata_o[8]      |            | LVCMOS33_OUT  | PT78B       | MOSI/MD0/SD4/S1_OUT                                 |
+| D14/0         | axis_mtdata_o[32]     |            | LVCMOS33_OUT  | PT80B       | MD2/SD6/S2_OUT                                      |
+| D15/0         | bd_o[11]              |            | LVCMOS33_OUT  | PT80A       | MISO/MD1/SD5/S2_IN/OSC_HI                           |
+| D16/0         | axis_mtdata_o[42]     |            | LVCMOS33_OUT  | PT82A       | MD3/SD7/S6_IN/OSC_BURST                             |
+| D17/0         | clk_byte_o            |            | LVCMOS33_OUT  | PT84B       | S7_OUT                                              |
+| E2/7          | axis_mtdata_o[50]     |            | LVCMOS33_OUT  | PL15A       | EIO                                                 |
+| E3/7          | axis_mtdata_o[48]     |            | LVCMOS33_OUT  | PL13B       | EIO                                                 |
+| E4/7          | axis_mtdata_o[41]     |            | LVCMOS33_OUT  | PL13A       | EIO                                                 |
+| E7/7          | axis_mtdata_o[40]     |            | LVCMOS33_OUT  | PL11A       | EIO                                                 |
+| E8/7          | axis_mtdata_o[27]     |            | LVCMOS33_OUT  | PL11B       | EIO                                                 |
+| E9/7          | lp_d_rx_p_o[0]        |            | LVCMOS33_OUT  | PL10B       | EIO                                                 |
+| E10/7         | reset_n_i             |            | LVCMOS33_IN   | PL10A       | EIO                                                 |
+| E11/0         | Reserved: sysCONFIG   |            |               | PT74B       | PROGRAMN                                            |
+| E12/0         | clk_byte_fr_i         |            | LVCMOS33_IN   | PT76A       | MCLK/S0_IN/PCLKT0_0                                 |
+| E13/0         | axis_mtdata_o[43]     |            | LVCMOS33_OUT  | PT78A       | MCSN/S1_IN/PCLKT0_1                                 |
+| E16/0         | axis_mtdata_o[16]     |            | LVCMOS33_OUT  | PT82B       | MCSNO/MSDO/S6_OUT                                   |
+| E17/1         | axis_mtdata_o[47]     |            | LVCMOS33_OUT  | PR3B        | S8_IN/EIO                                           |
+| E18/0         | axis_mtdata_o[3]      |            | LVCMOS33_OUT  | PT84A       | S7_IN                                               |
+| E20/1         | bd_o[27]              |            | LVCMOS33_OUT  | PR11A       | SD3/SDA/USER_SDA/S4_IN                              |
+| F1/7          | axis_mtdata_o[53]     |            | LVCMOS33_OUT  | PL15B       | EIO                                                 |
+| F13/1         | axis_mtdata_o[54]     |            | LVCMOS33_OUT  | PR4A        | S8_OUT/EIO                                          |
+| F14/1         | axis_mtdata_o[24]     |            | LVCMOS33_OUT  | PR6A        | S9_OUT/EIO                                          |
+| F15/1         | Reserved: sysCONFIG   |            |               | PR6B        | TMS/SCSN/S5_IN                                      |
+| F16/1         | bd_o[19]              |            | LVCMOS33_OUT  | PR8A        | EIO                                                 |
+| F17/1         | Reserved: sysCONFIG   |            |               | PR8B        | TDI/SSI/SD0/S5_OUT                                  |
+| F18/1         | bd_o[28]              |            | LVCMOS33_OUT  | PR10A       | EIO                                                 |
+| F19/1         | Reserved: sysCONFIG   |            |               | PR10B       | TDO/SSO/SD1/S3_OUT                                  |
+| F20/1         | bd_o[8]               |            | LVCMOS33_OUT  | PR11B       | SD2/SCL/USER_SCL/S3_IN                              |
+| G13/1         | axis_mtdata_o[46]     |            | LVCMOS33_OUT  | PR4B        | SD10                                                |
+| G14/1         | axis_mtdata_o[30]     |            | LVCMOS33_OUT  | PR15A       | SD9                                                 |
+| G15/1         | axis_mtdata_o[11]     |            | LVCMOS33_OUT  | PR15B       | SD8                                                 |
+| G18/1         | Reserved: sysCONFIG   |            |               | PR13A       | TCK/SCLK/PMU_EXT_CLK/S9_IN                          |
+| G19/1         | axis_mtvalid_o        |            | LVCMOS33_OUT  | PR13B       | PMU_WAKEUPN/SD11/S4_OUT                             |
+| J1/7          | reset_byte_fr_n_i     |            | LVCMOS33_IN   | PL17B       | EIO                                                 |
+| J2/7          | axis_mtdata_o[51]     |            | LVCMOS33_OUT  | PL17A       | PCLKT7_2/EIO                                        |
+| K1/7          | axis_mtdata_o[52]     |            | LVCMOS33_OUT  | PL19B       | EIO                                                 |
+| K2/7          | axis_mtdata_o[45]     |            | LVCMOS33_OUT  | PL19A       | PCLKT7_1/EIO                                        |
+| K3/7          | axis_mtdata_o[44]     |            | LVCMOS33_OUT  | PL20A       | PCLKT7_0/EIO                                        |
+| K4/7          | axis_mtdata_o[55]     |            | LVCMOS33_OUT  | PL20B       | EIO                                                 |
+| K5/6          | axis_mtdata_o[56]     |            | LVCMOS33_OUT  | PL24A       | EIO                                                 |
+| K6/6          | bd_o[9]               |            | LVCMOS33_OUT  | PL24B       | EIO                                                 |
+| K7/6          | bd_o[25]              |            | LVCMOS33_OUT  | PL26A       | EIO                                                 |
+| K8/6          | axis_mtdata_o[60]     |            | LVCMOS33_OUT  | PL26B       | EIO                                                 |
+| L1/6          | axis_mtdata_o[17]     |            | LVCMOS33_OUT  | PL27A       | EIO                                                 |
+| L2/6          | axis_mtdata_o[57]     |            | LVCMOS33_OUT  | PL27B       | EIO                                                 |
+| L5/6          | axis_mtdata_o[62]     |            | LVCMOS33_OUT  | PL30A       | PCLKT6_0/EIO                                        |
+| L6/6          | bd_o[17]              |            | LVCMOS33_OUT  | PL30B       | EIO                                                 |
+| L7/6          | axis_mtdata_o[1]      |            | LVCMOS33_OUT  | PL32A       | PCLKT6_1/EIO                                        |
+| L8/6          | bd_o[7]               |            | LVCMOS33_OUT  | PL32B       | EIO                                                 |
+| L13/1         | axis_mtdata_o[49]     |            | LVCMOS33_OUT  | PR17A       | PCLKT1_2/SD12                                       |
+| L14/1         | bd_o[16]              |            | LVCMOS33_OUT  | PR17B       | SD13                                                |
+| L15/1         | bd_o[24]              |            | LVCMOS33_OUT  | PR19B       | SD15                                                |
+| L16/1         | axis_mtdata_o[59]     |            | LVCMOS33_OUT  | PR19A       | PCLKT1_1/SD14                                       |
+| L19/1         | axis_mtdata_o[25]     |            | LVCMOS33_OUT  | PR20B       | EIO                                                 |
+| L20/1         | bd_o[30]              |            | LVCMOS33_OUT  | PR20A       | PCLKT1_0/EIO                                        |
+| M2/6          | bd_o[26]              |            | LVCMOS33_OUT  | PL34A       | PCLKT6_2/EIO                                        |
+| M3/6          | axis_mtdata_o[21]     |            | LVCMOS33_OUT  | PL34B       | EIO                                                 |
+| M4/6          | bd_o[31]              |            | LVCMOS33_OUT  | PL36A       | EIO                                                 |
+| M5/6          | axis_mtdata_o[39]     |            | LVCMOS33_OUT  | PL36B       | EIO                                                 |
+| M6/6          | axis_mtdata_o[36]     |            | LVCMOS33_OUT  | PL38A       | EIO                                                 |
+| M7/6          | axis_mtdata_o[33]     |            | LVCMOS33_OUT  | PL38B       | EIO                                                 |
+| M14/2         | axis_mtdata_o[19]     |            | LVCMOS33_OUT  | PR24B       | EIO                                                 |
+| M15/2         | axis_mtdata_o[38]     |            | LVCMOS33_OUT  | PR26B       | EIO                                                 |
+| M16/2         | axis_mtdata_o[9]      |            | LVCMOS33_OUT  | PR26A       | EIO                                                 |
+| M17/2         | axis_mtdata_o[6]      |            | LVCMOS33_OUT  | PR30A       | PCLKT2_0/EIO                                        |
+| M18/2         | axis_mtdata_o[14]     |            | LVCMOS33_OUT  | PR30B       | EIO                                                 |
+| M19/2         | axis_mtdata_o[4]      |            | LVCMOS33_OUT  | PR32A       | PCLKT2_1/EIO                                        |
+| M20/2         | bd_o[14]              |            | LVCMOS33_OUT  | PR32B       | EIO                                                 |
+| N4/6          | bd_o[29]              |            | LVCMOS33_OUT  | PL40A       | EIO                                                 |
+| N5/6          | axis_mtdata_o[13]     |            | LVCMOS33_OUT  | PL40B       | EIO                                                 |
+| N6/6          | axis_mtdata_o[58]     |            | LVCMOS33_OUT  | PL42A       | EIO                                                 |
+| N7/6          | axis_mtdata_o[7]      |            | LVCMOS33_OUT  | PL42B       | EIO                                                 |
+| N14/2         | axis_mtdata_o[0]      |            | LVCMOS33_OUT  | PR24A       | EIO                                                 |
+| N15/2         | axis_mtdata_o[63]     |            | LVCMOS33_OUT  | PR27A       | EIO                                                 |
+| N16/2         | bd_o[22]              |            | LVCMOS33_OUT  | PR27B       | EIO                                                 |
+| N19/2         | bd_o[12]              |            | LVCMOS33_OUT  | PR34A       | PCLKT2_2/EIO                                        |
+| N20/2         | axis_mtdata_o[28]     |            | LVCMOS33_OUT  | PR34B       | EIO                                                 |
+| P1/6          | axis_mtdata_o[37]     |            | LVCMOS33_OUT  | PL44A       | EIO                                                 |
+| P2/6          | axis_mtdata_o[5]      |            | LVCMOS33_OUT  | PL44B       | EIO                                                 |
+| P5/6          | bd_o[18]              |            | LVCMOS33_OUT  | PL46A       | EIO                                                 |
+| P6/6          | axis_mtdata_o[61]     |            | LVCMOS33_OUT  | PL46B       | EIO                                                 |
+| P7/4          |     unused, PULL:DOWN |            |               | PB26A       | BDQ22                                               |
+| P8/4          |     unused, PULL:DOWN |            |               | PB26B       | BDQ22                                               |
+| P9/4          | lp_en_o               |            | LVCMOS18H_OUT | PB32B       | BDQ38                                               |
+| P10/4         |     unused, PULL:DOWN |            |               | PB34A       | BDQ38                                               |
+| P11/4         | bd_o[0]               |            | LVCMOS18H_OUT | PB46A       | BDQ38                                               |
+| P12/3         |     unused, PULL:DOWN |            |               | PB64B       | ADC_CN4/BDQ60                                       |
+| P13/3         |     unused, PULL:DOWN |            |               | PB70A       | COMP2IP/BDQ76                                       |
+| P17/2         | axis_mtdata_o[35]     |            | LVCMOS33_OUT  | PR38A       | EIO                                                 |
+| P18/2         | axis_mtdata_o[34]     |            | LVCMOS33_OUT  | PR38B       | EIO                                                 |
+| P19/2         | axis_mtdata_o[31]     |            | LVCMOS33_OUT  | PR36A       | EIO                                                 |
+| P20/2         | bd_o[20]              |            | LVCMOS33_OUT  | PR36B       | EIO                                                 |
+| R1/6          | bd_o[23]              |            | LVCMOS33_OUT  | PL47A       | EIO                                                 |
+| R2/6          | bd_o[21]              |            | LVCMOS33_OUT  | PL47B       | EIO                                                 |
+| R3/6          | axis_mtdata_o[29]     |            | LVCMOS33_OUT  | PL49A       | EIO                                                 |
+| R4/6          | bd_o[13]              |            | LVCMOS33_OUT  | PL49B       | EIO                                                 |
+| R5/5          |     unused, PULL:DOWN |            |               | PB10A       | PCLKT5_2/CDR0_TESTP/ADC_CP2/COMP3P                  |
+| R6/5          |     unused, PULL:DOWN |            |               | PB10B       | PCLKC5_2/CDR0_TESTN/ADC_CN2/COMP3N                  |
+| R7/4          |     unused, PULL:DOWN |            |               | PB18A       | PCLKT4_3/BDQ22                                      |
+| R8/4          |     unused, PULL:DOWN |            |               | PB28A       | BDQ22                                               |
+| R9/4          | sp_en_o               |            | LVCMOS18H_OUT | PB32A       | BDQ38                                               |
+| R10/4         | bd_o[1]               |            | LVCMOS18H_OUT | PB34B       | BDQ38                                               |
+| R11/4         |     unused, PULL:DOWN |            |               | PB46B       | VREF4_2/BDQ38                                       |
+| R12/3         |     unused, PULL:DOWN |            |               | PB64A       | ADC_CP4/BDQ60                                       |
+| R13/3         |     unused, PULL:DOWN |            |               | PB70B       | COMP2IN/BDQ76                                       |
+| R16/70        |                       |            |               | ADC_DN0     |                                                     |
+| R17/2         | axis_mtdata_o[23]     |            | LVCMOS33_OUT  | PR40A       | EIO                                                 |
+| R18/2         | axis_mtdata_o[10]     |            | LVCMOS33_OUT  | PR40B       | EIO                                                 |
+| SD_REFCLKN/80 |                       |            |               | SD0_REFCLKN |                                                     |
+| SD_REFCLKP/80 |                       |            |               | SD0_REFCLKP |                                                     |
+| T1/5          |     unused, PULL:DOWN |            |               | PB4B        | CDR_RXN0/ADC_CN0/COMP1N                             |
+| T6/4          |     unused, PULL:DOWN |            |               | PB16A       | VREF4_1/BDQ22                                       |
+| T7/4          |     unused, PULL:DOWN |            |               | PB18B       | PCLKC4_3/BDQ22                                      |
+| T8/4          |     unused, PULL:DOWN |            |               | PB28B       | BDQ22                                               |
+| T10/4         | ref_dt_i[3]           |            | LVCMOS18H_IN  | PB40A       | PCLKT4_1/BDQ38                                      |
+| T11/4         | ref_dt_i[4]           |            | LVCMOS18H_IN  | PB40B       | PCLKC4_1/BDQ38                                      |
+| T12/3         |     unused, PULL:DOWN |            |               | PB62B       | ADC_CN10/BDQ60                                      |
+| T13/3         |     unused, PULL:DOWN |            |               | PB74A       | PCLKT3_3/ADC_CP14/BDQ76                             |
+| T14/3         |     unused, PULL:DOWN |            |               | PB74B       | PCLKC3_3/ADC_CN14/BDQ76                             |
+| T16/70        |                       |            |               | ADC_DP0     |                                                     |
+| T17/70        |                       |            |               | ADC_DP1     |                                                     |
+| T18/2         | bd_o[6]               |            | LVCMOS33_OUT  | PR46A       | EIO                                                 |
+| T20/2         | bd_o[10]              |            | LVCMOS33_OUT  | PR42B       | EIO                                                 |
+| U1/5          |     unused, PULL:DOWN |            |               | PB4A        | LLC_GPLL0T_MFGOUT2/CDR_RXP0/VREF5_1/ADC_CP0/COMP1P  |
+| U6/4          | pd_dphy_i             |            | LVCMOS18H_IN  | PB16B       | BDQ22                                               |
+| U7/4          |     unused, PULL:DOWN |            |               | PB20B       | BDQ22                                               |
+| U10/4         | lp_av_en_o            |            | LVCMOS18H_OUT | PB42A       | BDQ38                                               |
+| U11/3         |     unused, PULL:DOWN |            |               | PB56B       | ADC_CN7/BDQ60                                       |
+| U12/3         |     unused, PULL:DOWN |            |               | PB62A       | ADC_CP10/BDQ60                                      |
+| U14/3         |     unused, PULL:DOWN |            |               | PB68B       | ADC_CN8/BDQ60                                       |
+| U15/3         |     unused, PULL:DOWN |            |               | PB78A       | ADC_CP11/BDQ76                                      |
+| U16/3         |     unused, PULL:DOWN |            |               | PB80B       | ADC_CN12/BDQ76                                      |
+| U17/70        |                       |            |               | ADC_DN1     |                                                     |
+| U18/2         | axis_mtdata_o[18]     |            | LVCMOS33_OUT  | PR46B       | EIO                                                 |
+| U20/2         | axis_mtdata_o[15]     |            | LVCMOS33_OUT  | PR42A       | EIO                                                 |
+| V1/5          |     unused, PULL:DOWN |            |               | PB6A        | PCLKT5_0/LLC_GPLL0T_MFGOUT1/CDR_RXP1/ADC_CP1/COMP2P |
+| V6/4          | tx_rdy_i              |            | LVCMOS18H_IN  | PB20A       | BDQ22                                               |
+| V7/4          |     unused, PULL:DOWN |            |               | PB24B       | PCLKC4_2/BDQ22                                      |
+| V9/4          | bd_o[5]               |            | LVCMOS18H_OUT | PB36B       | BDQ38                                               |
+| V10/4         |     unused, PULL:DOWN |            |               | PB42B       | BDQ38                                               |
+| V11/3         | bd_o[3]               |            | LVCMOS18H_OUT | PB56A       | ADC_CP7/BDQ60                                       |
+| V12/3         |     unused, PULL:DOWN |            |               | PB60B       | ADC_CN9/BDQSN60                                     |
+| V14/3         |     unused, PULL:DOWN |            |               | PB68A       | ADC_CP8/BDQ60                                       |
+| V16/3         |     unused, PULL:DOWN |            |               | PB78B       | ADC_CN11/BDQ76                                      |
+| V17/3         |     unused, PULL:DOWN |            |               | PB80A       | LRC_GPLL0T_MFGOUT2/ADC_CP12/BDQ76                   |
+| V18/2         | axis_mtdata_o[2]      |            | LVCMOS33_OUT  | PR47A       | EIO                                                 |
+| V19/2         | axis_mtdata_o[12]     |            | LVCMOS33_OUT  | PR47B       | EIO                                                 |
+| V20/2         | axis_mtdata_o[26]     |            | LVCMOS33_OUT  | PR44B       | EIO                                                 |
+| W1/5          |     unused, PULL:DOWN |            |               | PB6B        | PCLKC5_0/CDR_RXN1/ADC_CN1/COMP2N                    |
+| W5/5          |     unused, PULL:DOWN |            |               | PB12B       | PCLKC5_3/CDR1_TESTN/VREF5_2                         |
+| W6/4          |     unused, PULL:DOWN |            |               | PB22A       | BDQS22                                              |
+| W7/4          |     unused, PULL:DOWN |            |               | PB24A       | PCLKT4_2/BDQ22                                      |
+| W8/4          | ref_dt_i[0]           |            | LVCMOS18H_IN  | PB36A       | BDQ38                                               |
+| W9/4          | ref_dt_i[5]           |            | LVCMOS18H_IN  | PB38A       | BDQS38                                              |
+| W10/4         | ref_dt_i[2]           |            | LVCMOS18H_IN  | PB44A       | PCLKT4_0/BDQ38                                      |
+| W11/3         | bd_o[2]               |            | LVCMOS18H_OUT | PB54A       | PCLKT3_0/VREF3_1/ADC_CP5/BDQ60                      |
+| W12/3         |     unused, PULL:DOWN |            |               | PB58B       | PCLKC3_1/ADC_CN6/BDQ60                              |
+| W13/3         |     unused, PULL:DOWN |            |               | PB60A       | ADC_CP9/BDQS60                                      |
+| W14/3         |     unused, PULL:DOWN |            |               | PB72A       | PCLKT3_2/ADC_CP13/BDQ76                             |
+| W15/3         |     unused, PULL:DOWN |            |               | PB72B       | PCLKC3_2/ADC_CN13/BDQ76                             |
+| W17/3         |     unused, PULL:DOWN |            |               | PB82B       | ADC_CN15/BDQ76                                      |
+| W18/3         |     unused, PULL:DOWN |            |               | PB84A       | LRC_GPLL0T_IN/ATB_FORCE/BDQ76                       |
+| W19/2         | bd_o[15]              |            | LVCMOS33_OUT  | PR49A       | EIO                                                 |
+| W20/2         | axis_mtdata_o[22]     |            | LVCMOS33_OUT  | PR44A       | EIO                                                 |
+| Y2/5          |     unused, PULL:DOWN |            |               | PB8A        | PCLKT5_1/LLC_GPLL0T_IN/ADC_CP3                      |
+| Y3/5          |     unused, PULL:DOWN |            |               | PB8B        | PCLKC5_1/LLC_GPLL0C_IN/ADC_CN3                      |
+| Y5/5          |     unused, PULL:DOWN |            |               | PB12A       | PCLKT5_3/CDR1_TESTP                                 |
+| Y6/4          |     unused, PULL:DOWN |            |               | PB22B       | BDQSN22                                             |
+| Y7/4          | hs_sync_o             |            | LVCMOS18H_OUT | PB30A       | BDQ22                                               |
+| Y8/4          |     unused, PULL:DOWN |            |               | PB30B       | BDQ22                                               |
+| Y9/4          | ref_dt_i[1]           |            | LVCMOS18H_IN  | PB38B       | BDQSN38                                             |
+| Y10/4         |     unused, PULL:DOWN |            |               | PB44B       | PCLKC4_0/BDQ38                                      |
+| Y11/3         |     unused, PULL:DOWN |            |               | PB54B       | PCLKC3_0/ADC_CN5/BDQ60                              |
+| Y12/3         | bd_o[4]               |            | LVCMOS18H_OUT | PB58A       | PCLKT3_1/ADC_CP6/BDQ60                              |
+| Y13/3         |     unused, PULL:DOWN |            |               | PB66A       | COMP1IP/BDQ60                                       |
+| Y14/3         |     unused, PULL:DOWN |            |               | PB66B       | COMP1IN/BDQ60                                       |
+| Y15/3         |     unused, PULL:DOWN |            |               | PB76A       | COMP3IP/BDQS76                                      |
+| Y16/3         |     unused, PULL:DOWN |            |               | PB76B       | COMP3IN/BDQSN76                                     |
+| Y17/3         |     unused, PULL:DOWN |            |               | PB82A       | LRC_GPLL0T_MFGOUT1/ADC_CP15/BDQ76                   |
+| Y18/3         |     unused, PULL:DOWN |            |               | PB84B       | LRC_GPLL0C_IN/VREF3_2/ATB_SENSE/BDQ76               |
+| Y19/2         | axis_mtdata_o[20]     |            | LVCMOS33_OUT  | PR49B       | EIO                                                 |
++---------------+-----------------------+------------+---------------+-------------+-----------------------------------------------------+
+
+sysCONFIG Pins:
++----------+----------------------------+----------+-------------+
+| Pad Name | sysCONFIG Pin Name         | Pin/Bank | Buffer Type |
++----------+----------------------------+----------+-------------+
+| PT74A    | INITN                      | D11/0    |             |
+| PT74B    | PROGRAMN                   | E11/0    |             |
+| PT76B    | DONE/S0_OUT                | D12/0    |             |
+| PR13A    | TCK/SCLK/PMU_EXT_CLK/S9_IN | G18/1    |             |
+| PR10B    | TDO/SSO/SD1/S3_OUT         | F19/1    |             |
+| PR8B     | TDI/SSI/SD0/S5_OUT         | F17/1    |             |
+| PR6B     | TMS/SCSN/S5_IN             | F15/1    |             |
++----------+----------------------------+----------+-------------+
+
+
+Locate Constraints for each Pin: 
+
+ldc_set_location -site {N14} [ get_ports {axis_mtdata_o[0]} ]
+ldc_set_location -site {R18} [ get_ports {axis_mtdata_o[10]} ]
+ldc_set_location -site {G15} [ get_ports {axis_mtdata_o[11]} ]
+ldc_set_location -site {V19} [ get_ports {axis_mtdata_o[12]} ]
+ldc_set_location -site {N5} [ get_ports {axis_mtdata_o[13]} ]
+ldc_set_location -site {M18} [ get_ports {axis_mtdata_o[14]} ]
+ldc_set_location -site {U20} [ get_ports {axis_mtdata_o[15]} ]
+ldc_set_location -site {E16} [ get_ports {axis_mtdata_o[16]} ]
+ldc_set_location -site {L1} [ get_ports {axis_mtdata_o[17]} ]
+ldc_set_location -site {U18} [ get_ports {axis_mtdata_o[18]} ]
+ldc_set_location -site {M14} [ get_ports {axis_mtdata_o[19]} ]
+ldc_set_location -site {L7} [ get_ports {axis_mtdata_o[1]} ]
+ldc_set_location -site {Y19} [ get_ports {axis_mtdata_o[20]} ]
+ldc_set_location -site {M3} [ get_ports {axis_mtdata_o[21]} ]
+ldc_set_location -site {W20} [ get_ports {axis_mtdata_o[22]} ]
+ldc_set_location -site {R17} [ get_ports {axis_mtdata_o[23]} ]
+ldc_set_location -site {F14} [ get_ports {axis_mtdata_o[24]} ]
+ldc_set_location -site {L19} [ get_ports {axis_mtdata_o[25]} ]
+ldc_set_location -site {V20} [ get_ports {axis_mtdata_o[26]} ]
+ldc_set_location -site {E8} [ get_ports {axis_mtdata_o[27]} ]
+ldc_set_location -site {N20} [ get_ports {axis_mtdata_o[28]} ]
+ldc_set_location -site {R3} [ get_ports {axis_mtdata_o[29]} ]
+ldc_set_location -site {V18} [ get_ports {axis_mtdata_o[2]} ]
+ldc_set_location -site {G14} [ get_ports {axis_mtdata_o[30]} ]
+ldc_set_location -site {P19} [ get_ports {axis_mtdata_o[31]} ]
+ldc_set_location -site {D14} [ get_ports {axis_mtdata_o[32]} ]
+ldc_set_location -site {M7} [ get_ports {axis_mtdata_o[33]} ]
+ldc_set_location -site {P18} [ get_ports {axis_mtdata_o[34]} ]
+ldc_set_location -site {P17} [ get_ports {axis_mtdata_o[35]} ]
+ldc_set_location -site {M6} [ get_ports {axis_mtdata_o[36]} ]
+ldc_set_location -site {P1} [ get_ports {axis_mtdata_o[37]} ]
+ldc_set_location -site {M15} [ get_ports {axis_mtdata_o[38]} ]
+ldc_set_location -site {M5} [ get_ports {axis_mtdata_o[39]} ]
+ldc_set_location -site {E18} [ get_ports {axis_mtdata_o[3]} ]
+ldc_set_location -site {E7} [ get_ports {axis_mtdata_o[40]} ]
+ldc_set_location -site {E4} [ get_ports {axis_mtdata_o[41]} ]
+ldc_set_location -site {D16} [ get_ports {axis_mtdata_o[42]} ]
+ldc_set_location -site {E13} [ get_ports {axis_mtdata_o[43]} ]
+ldc_set_location -site {K3} [ get_ports {axis_mtdata_o[44]} ]
+ldc_set_location -site {K2} [ get_ports {axis_mtdata_o[45]} ]
+ldc_set_location -site {G13} [ get_ports {axis_mtdata_o[46]} ]
+ldc_set_location -site {E17} [ get_ports {axis_mtdata_o[47]} ]
+ldc_set_location -site {E3} [ get_ports {axis_mtdata_o[48]} ]
+ldc_set_location -site {L13} [ get_ports {axis_mtdata_o[49]} ]
+ldc_set_location -site {M19} [ get_ports {axis_mtdata_o[4]} ]
+ldc_set_location -site {E2} [ get_ports {axis_mtdata_o[50]} ]
+ldc_set_location -site {J2} [ get_ports {axis_mtdata_o[51]} ]
+ldc_set_location -site {K1} [ get_ports {axis_mtdata_o[52]} ]
+ldc_set_location -site {F1} [ get_ports {axis_mtdata_o[53]} ]
+ldc_set_location -site {F13} [ get_ports {axis_mtdata_o[54]} ]
+ldc_set_location -site {K4} [ get_ports {axis_mtdata_o[55]} ]
+ldc_set_location -site {K5} [ get_ports {axis_mtdata_o[56]} ]
+ldc_set_location -site {L2} [ get_ports {axis_mtdata_o[57]} ]
+ldc_set_location -site {N6} [ get_ports {axis_mtdata_o[58]} ]
+ldc_set_location -site {L16} [ get_ports {axis_mtdata_o[59]} ]
+ldc_set_location -site {P2} [ get_ports {axis_mtdata_o[5]} ]
+ldc_set_location -site {K8} [ get_ports {axis_mtdata_o[60]} ]
+ldc_set_location -site {P6} [ get_ports {axis_mtdata_o[61]} ]
+ldc_set_location -site {L5} [ get_ports {axis_mtdata_o[62]} ]
+ldc_set_location -site {N15} [ get_ports {axis_mtdata_o[63]} ]
+ldc_set_location -site {M17} [ get_ports {axis_mtdata_o[6]} ]
+ldc_set_location -site {N7} [ get_ports {axis_mtdata_o[7]} ]
+ldc_set_location -site {D13} [ get_ports {axis_mtdata_o[8]} ]
+ldc_set_location -site {M16} [ get_ports {axis_mtdata_o[9]} ]
+ldc_set_location -site {G19} [ get_ports {axis_mtvalid_o} ]
+ldc_set_location -site {P11} [ get_ports {bd_o[0]} ]
+ldc_set_location -site {T20} [ get_ports {bd_o[10]} ]
+ldc_set_location -site {D15} [ get_ports {bd_o[11]} ]
+ldc_set_location -site {N19} [ get_ports {bd_o[12]} ]
+ldc_set_location -site {R4} [ get_ports {bd_o[13]} ]
+ldc_set_location -site {M20} [ get_ports {bd_o[14]} ]
+ldc_set_location -site {W19} [ get_ports {bd_o[15]} ]
+ldc_set_location -site {L14} [ get_ports {bd_o[16]} ]
+ldc_set_location -site {L6} [ get_ports {bd_o[17]} ]
+ldc_set_location -site {P5} [ get_ports {bd_o[18]} ]
+ldc_set_location -site {F16} [ get_ports {bd_o[19]} ]
+ldc_set_location -site {R10} [ get_ports {bd_o[1]} ]
+ldc_set_location -site {P20} [ get_ports {bd_o[20]} ]
+ldc_set_location -site {R2} [ get_ports {bd_o[21]} ]
+ldc_set_location -site {N16} [ get_ports {bd_o[22]} ]
+ldc_set_location -site {R1} [ get_ports {bd_o[23]} ]
+ldc_set_location -site {L15} [ get_ports {bd_o[24]} ]
+ldc_set_location -site {K7} [ get_ports {bd_o[25]} ]
+ldc_set_location -site {M2} [ get_ports {bd_o[26]} ]
+ldc_set_location -site {E20} [ get_ports {bd_o[27]} ]
+ldc_set_location -site {F18} [ get_ports {bd_o[28]} ]
+ldc_set_location -site {N4} [ get_ports {bd_o[29]} ]
+ldc_set_location -site {W11} [ get_ports {bd_o[2]} ]
+ldc_set_location -site {L20} [ get_ports {bd_o[30]} ]
+ldc_set_location -site {M4} [ get_ports {bd_o[31]} ]
+ldc_set_location -site {V11} [ get_ports {bd_o[3]} ]
+ldc_set_location -site {Y12} [ get_ports {bd_o[4]} ]
+ldc_set_location -site {V9} [ get_ports {bd_o[5]} ]
+ldc_set_location -site {T18} [ get_ports {bd_o[6]} ]
+ldc_set_location -site {L8} [ get_ports {bd_o[7]} ]
+ldc_set_location -site {F20} [ get_ports {bd_o[8]} ]
+ldc_set_location -site {K6} [ get_ports {bd_o[9]} ]
+ldc_set_location -site {E12} [ get_ports {clk_byte_fr_i} ]
+ldc_set_location -site {D7} [ get_ports {clk_byte_hs_o} ]
+ldc_set_location -site {D17} [ get_ports {clk_byte_o} ]
+ldc_set_location -site {Y7} [ get_ports {hs_sync_o} ]
+ldc_set_location -site {U10} [ get_ports {lp_av_en_o} ]
+ldc_set_location -site {D3} [ get_ports {lp_d_rx_n_o[0]} ]
+ldc_set_location -site {D5} [ get_ports {lp_d_rx_n_o[1]} ]
+ldc_set_location -site {D4} [ get_ports {lp_d_rx_n_o[2]} ]
+ldc_set_location -site {D8} [ get_ports {lp_d_rx_n_o[3]} ]
+ldc_set_location -site {E9} [ get_ports {lp_d_rx_p_o[0]} ]
+ldc_set_location -site {D6} [ get_ports {lp_d_rx_p_o[1]} ]
+ldc_set_location -site {D9} [ get_ports {lp_d_rx_p_o[2]} ]
+ldc_set_location -site {D10} [ get_ports {lp_d_rx_p_o[3]} ]
+ldc_set_location -site {P9} [ get_ports {lp_en_o} ]
+ldc_set_location -site {U6} [ get_ports {pd_dphy_i} ]
+ldc_set_location -site {W8} [ get_ports {ref_dt_i[0]} ]
+ldc_set_location -site {Y9} [ get_ports {ref_dt_i[1]} ]
+ldc_set_location -site {W10} [ get_ports {ref_dt_i[2]} ]
+ldc_set_location -site {T10} [ get_ports {ref_dt_i[3]} ]
+ldc_set_location -site {T11} [ get_ports {ref_dt_i[4]} ]
+ldc_set_location -site {W9} [ get_ports {ref_dt_i[5]} ]
+ldc_set_location -site {J1} [ get_ports {reset_byte_fr_n_i} ]
+ldc_set_location -site {E10} [ get_ports {reset_n_i} ]
+ldc_set_location -site {R9} [ get_ports {sp_en_o} ]
+ldc_set_location -site {V6} [ get_ports {tx_rdy_i} ]
+
+
+
+
+
+
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Fri Nov 18 14:02:39 2022
+

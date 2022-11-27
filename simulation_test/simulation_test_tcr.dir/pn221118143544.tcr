@@ -1,0 +1,19 @@
+#Start recording tcl command: 11/17/2022 16:25:35
+#Project Location: C:/Users/chaoq/my_designs/csi2cpi/simulation_test; Project name: simulation_test
+C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI
+CSI2CPI
+#Start recording tcl command: 11/18/2022 14:35:43
+#Project Location: C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI; Project name: CSI2CPI
+prj_create -name "simulation_test" -impl "impl_1" -dev LIFCL-40-8BG400C -performance "8_High-Performance_1.0V" -synthesis "lse"
+prj_save 
+prj_add_source "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/test_simulation.ipx"
+prj_run Synthesis -impl impl_1
+prj_add_source "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/test_simulation.spf"
+prj_add_source "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/sim2/sim2.spf"
+prj_add_source "C:/Users/chaoq/my_designs/csi2cpi/simulation_test/sim3/sim3.spf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_save 
+prj_close
+prj_open "C:/Users/chaoq/my_designs/csi2cpi/CSI2CPI/CSI2CPI.rdf"
+#Stop recording: 11/18/2022 14:35:44

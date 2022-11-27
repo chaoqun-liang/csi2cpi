@@ -1,0 +1,155 @@
+C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v {2 {vlog -work work -stats=none C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module bus_driver
+-- Compiling module clk_driver
+-- Compiling module csi2_model
+-- Compiling module dsi_model
+-- Compiling module tb_top
+** Warning: ** while parsing file included at C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(74)
+** at C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/dut_params.v(35): (vlog-2263) Redefinition of macro: 'LIFCL' (previously defined near C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/dut_params.v(33), old value '', new value '-40') .
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(840): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(840): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(852): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(852): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(852): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(852): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(849): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(849): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(845): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(845): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(862): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(862): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(862): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(862): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(865): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(865): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(865): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(865): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(865): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(865): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(858): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(858): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(858): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(858): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(875): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(875): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(875): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(875): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(875): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(875): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(878): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(878): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(878): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(878): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(878): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(878): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(871): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(871): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(871): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(871): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(871): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(871): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(887): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(887): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(887): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(887): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(887): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(887): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(887): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(887): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(884): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(884): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(884): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(884): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(884): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(884): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(884): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(884): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(895): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(895): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(895): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(895): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(895): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(895): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(895): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(895): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(895): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(895): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(892): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(892): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(892): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(892): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(892): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(892): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(892): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(892): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(892): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(892): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(909): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(909): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(912): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(912): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(920): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(920): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(920): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(920): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(917): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(917): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(917): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(917): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(925): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(925): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(926): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(926): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(930): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(930): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(931): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(931): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(933): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(933): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(934): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(934): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(951): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(951): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(952): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(952): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(953): (vlog-2697) MSB 63 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(953): (vlog-2697) LSB 56 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(957): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(957): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(958): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(958): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(959): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(959): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(961): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(961): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(962): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(962): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(963): (vlog-2697) MSB 63 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(963): (vlog-2697) LSB 56 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(941): (vlog-2697) MSB 23 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(941): (vlog-2697) LSB 16 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(942): (vlog-2697) MSB 31 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(942): (vlog-2697) LSB 24 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(943): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(943): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(944): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(944): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(945): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(945): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(946): (vlog-2697) MSB 63 of part-select into 'byte_data_temp_w' is out of bounds.
+** Warning: C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/testbench/tb_top.v(946): (vlog-2697) LSB 56 of part-select into 'byte_data_temp_w' is out of bounds.
+
+Top level modules:
+	tb_top
+
+} {} {}} C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v {1 {vlog -work work -stats=none C:/Users/chaoq/my_designs/csi2cpi/csi2cpi_test/rxdphy/rtl/rxdphy.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module rxdphy
+-- Compiling module rxdphy_ipgen_lscc_dphy_rx_wrap
+-- Compiling module rxdphy_ipgen_lscc_dphy_rx_wrap_cil
+
+Top level modules:
+	rxdphy
+
+} {} {}}

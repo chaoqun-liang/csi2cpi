@@ -1,0 +1,255 @@
+---------------------------------------------------
+Report for cell test_simulation
+   Instance path: test_simulation
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        805        100.0
+                                 IOBUF	        122        100.0
+                                PFUREG	        667        100.0
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_1	          1        99.8
+---------------------------------------------------
+Report for cell secured_design_1
+   Instance path: test_simulation/lscc_dphy_rx_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        803        99.8
+                                PFUREG	        667        100.0
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_2	          1         0.0
+                     secured_design_25	          1         0.0
+                      secured_design_3	          1         0.0
+                      secured_design_4	          1        99.8
+---------------------------------------------------
+Report for cell secured_design_2
+   Instance path: test_simulation/secured_instance_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          5         0.7
+---------------------------------------------------
+Report for cell secured_design_3
+   Instance path: test_simulation/secured_instance_3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          5         0.7
+---------------------------------------------------
+Report for cell secured_design_4
+   Instance path: test_simulation/secured_instance_4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        803        99.8
+                                PFUREG	        592        88.8
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_22	          1         4.8
+                     secured_design_24	          1        57.0
+                      secured_design_5	          1        37.9
+---------------------------------------------------
+Report for cell secured_design_5
+   Instance path: test_simulation/secured_instance_5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        305        37.9
+                                PFUREG	        249        37.3
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_6	          1        37.8
+---------------------------------------------------
+Report for cell secured_design_6
+   Instance path: test_simulation/secured_instance_6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        304        37.8
+                                PFUREG	        193        28.9
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_7	          1        37.8
+---------------------------------------------------
+Report for cell secured_design_7
+   Instance path: test_simulation/secured_instance_7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        304        37.8
+                                PFUREG	        193        28.9
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_15	          1        14.0
+                      secured_design_8	          1        14.2
+---------------------------------------------------
+Report for cell secured_design_8
+   Instance path: test_simulation/secured_instance_8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        114        14.2
+                                PFUREG	         67        10.0
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_9	          1        14.2
+---------------------------------------------------
+Report for cell secured_design_9
+   Instance path: test_simulation/secured_instance_9
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        114        14.2
+                                PFUREG	         67        10.0
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_10	          1        14.2
+---------------------------------------------------
+Report for cell secured_design_10
+   Instance path: test_simulation/secured_instance_10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        114        14.2
+                                PFUREG	         67        10.0
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_11	          1        14.2
+---------------------------------------------------
+Report for cell secured_design_11
+   Instance path: test_simulation/secured_instance_11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        114        14.2
+                                PFUREG	         67        10.0
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_12	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_12
+   Instance path: test_simulation/secured_instance_12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.1
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_13	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_13
+   Instance path: test_simulation/secured_instance_13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.1
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_14	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_14
+   Instance path: test_simulation/secured_instance_14
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        50.0
+---------------------------------------------------
+Report for cell secured_design_15
+   Instance path: test_simulation/secured_instance_15
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        113        14.0
+                                PFUREG	         67        10.0
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_16	          1        14.0
+---------------------------------------------------
+Report for cell secured_design_16
+   Instance path: test_simulation/secured_instance_16
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        113        14.0
+                                PFUREG	         67        10.0
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_17	          1        14.0
+---------------------------------------------------
+Report for cell secured_design_17
+   Instance path: test_simulation/secured_instance_17
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        113        14.0
+                                PFUREG	         67        10.0
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_18	          1        14.0
+---------------------------------------------------
+Report for cell secured_design_18
+   Instance path: test_simulation/secured_instance_18
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        113        14.0
+                                PFUREG	         67        10.0
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_19	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_19
+   Instance path: test_simulation/secured_instance_19
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.1
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_20	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_20
+   Instance path: test_simulation/secured_instance_20
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.1
+                                   EBR	          1        50.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_21	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_21
+   Instance path: test_simulation/secured_instance_21
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        50.0
+---------------------------------------------------
+Report for cell secured_design_22
+   Instance path: test_simulation/secured_instance_22
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         39         4.8
+                                PFUREG	         27         4.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_23	          1         1.7
+---------------------------------------------------
+Report for cell secured_design_23
+   Instance path: test_simulation/secured_instance_23
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         14         1.7
+                                PFUREG	         10         1.5
+---------------------------------------------------
+Report for cell secured_design_24
+   Instance path: test_simulation/secured_instance_24
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        459        57.0
+                                PFUREG	        316        47.4
+---------------------------------------------------
+Report for cell secured_design_25
+   Instance path: test_simulation/secured_instance_25
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         65         9.7

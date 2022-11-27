@@ -1,0 +1,1 @@
+C:/lscc/radiant/3.2/bin/nt64/moduleparser.exe -PROJ test_simulation -pf C:/lscc/radiant/3.2/cae_library/synthesis/vhdl/lifcl.vhd -pf C:/lscc/radiant/3.2/cae_library/synthesis/verilog/lifcl.v -lib lifcl -lst C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/source_files.lst

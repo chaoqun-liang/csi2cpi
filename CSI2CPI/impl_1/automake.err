@@ -1,0 +1,43 @@
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(14): syntax error near ,. VERI-1137
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(20): state_s is not valid in an expression. VERI-1130
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(21): axi4s_ready is not declared. VERI-1128
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(27): procedural assignment to a non-register axi4s_sdata_i is not permitted. VERI-1100
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(27): assignment to input axi4s_sdata_i. VERI-1214
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(30): axi4s_mdata_i is not declared. VERI-1128
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(36): next_state_s is not declared. VERI-1128
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(37): state_s is not valid in an expression. VERI-1130
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(38): next_state_s is not declared. VERI-1128
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(39): next_state_s is not declared. VERI-1128
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(46): cannot assign to non-variable state_s. VERI-1007
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(46): state_s is not valid in an expression. VERI-1130
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(48): cannot assign to non-variable state_s. VERI-1007
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(48): next_state_s is not declared. VERI-1128
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(48): state_s is not valid in an expression. VERI-1130
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(52): module module ignored due to previous errors. VERI-1072
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - Error analyzing Verilog file (mixed design).
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/payload_unpack.sv(13): unexpected EOF. VERI-1138
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - Error analyzing Verilog file (mixed design).
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/sync_unpack.sv(12): unexpected EOF. VERI-1138
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - Error analyzing Verilog file (mixed design).
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/csi2cpi_wrapper.sv(14): syntax error near ;. VERI-1137
+ERROR - Stopping Synthesis Tool flow due to error.
+ERROR - Error analyzing Verilog file (mixed design).
+ERROR - c:/users/chaoq/my_designs/csi2cpi/csi2cpi/source/impl_1/axi4s_slave_if.sv(14): syntax error near ,. VERI-1137

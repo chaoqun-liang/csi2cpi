@@ -1,0 +1,640 @@
+m255
+K4
+z2
+!s11f vlog 2021.4 2021.10, Oct 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/chaoq/my_designs/csi2cpi/simulation_test/sim2
+vbus_driver
+Z1 !s110 1669223900
+!i10b 1
+!s100 8f29_Qa8:?NQMTzhOW8Yb2
+IeG4I_IiT1GT1DRXaH;F:Z3
+R0
+Z2 w1666362345
+8C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/bus_driver.v
+FC:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/bus_driver.v
+!i122 10
+L0 10 59
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OT;L;2021.4;73
+r1
+!s85 0
+31
+Z5 !s108 1669223900.000000
+!s107 C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dut_inst.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dut_params.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dsi_model.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/csi2_model.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/clk_driver.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/bus_driver.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v|
+Z6 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v|
+!s101 -O0
+!i113 1
+Z7 o-work work -O0
+Z8 tCvgOpt 0
+vclk_driver
+R1
+!i10b 1
+!s100 9]J3WWo21OhYW`CN08lUz1
+IjMCO1N<IA]i@<UZn7l0Y03
+R0
+R2
+8C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/clk_driver.v
+FC:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/clk_driver.v
+!i122 10
+L0 10 17
+R3
+R4
+r1
+!s85 0
+31
+R5
+Z9 !s107 C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dut_inst.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dut_params.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dsi_model.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/csi2_model.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/clk_driver.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/bus_driver.v|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v|
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+vcsi2_model
+R1
+!i10b 1
+!s100 XNkVWW@1MJ2NfVo3PE9A?0
+I_R7j8LDZBU:H_hz7]IEGC1
+R0
+R2
+8C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/csi2_model.v
+FC:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/csi2_model.v
+!i122 10
+L0 10 1085
+R3
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+vdsi_model
+R1
+!i10b 1
+!s100 o4^F[@@`4[DOBcJ?2E1Rl2
+IJPUJ1mLf[:]b:LA12>^[Y3
+R0
+R2
+8C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dsi_model.v
+FC:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dsi_model.v
+!i122 10
+L0 10 1246
+R3
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+vtb_top
+R1
+!i10b 1
+!s100 j]?8oOFfTaWPV0X58_5Tb3
+I9bWf:Ib_VU883cfTD=ITJ1
+R0
+w1668776854
+8C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v
+FC:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v
+FC:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dut_params.v
+FC:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dut_inst.v
+!i122 10
+L0 69 1029
+R3
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!s101 -O0
+!i113 1
+R7
+R8
+vtest_simulation
+!s125 LATTICE_CONN
+Z10 !s110 1668768592
+!i10b 1
+!s100 l^9_LTKF<OocW8X[Zk7RD3
+IKNOO`KB:bjA=Wj59_CEfl0
+R0
+Z11 w1668698766
+Z12 8C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/rtl/test_simulation.v
+Z13 FC:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/rtl/test_simulation.v
+!i122 8
+L0 11 160
+R3
+R4
+r1
+!s85 0
+31
+Z14 !s108 1668768592.000000
+Z15 !s107 C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/rtl/test_simulation.v|
+Z16 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/rtl/test_simulation.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vTuv6WQaLQN681MTA7KZ69pB6d3yT7WNPabHzjzwpiz1A+4eD77O47IPDxnTVLks7
+R10
+!i10b 0
+!s100 OVbhLJE7zOzH`869m9AEF1
+I@X;HMam>00VYe?llOlMhI2
+!i119 1
+!i8a 851719664
+R0
+Z17 w1668768592
+R12
+R13
+!i122 8
+Z18 L0 280 1
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n1f42872
+veFqyUTm6ecH2ZQGq6bSRBjNWmYzwMweTC8n81eJI4+YH474UJ4LX/+a3jXfU5nGg
+R10
+!i10b 0
+!s100 Qz`RId5[2n>>fZSB681Im2
+IfbhdBlgd;lecGYNE4_RTk3
+!i119 1
+!i8a 268713488
+R0
+R17
+R12
+R13
+!i122 8
+R18
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n6ecc
+vY7SyAaGKjP3hn74Fay19lFHyklxt/Xj/oR0lANGEXe3JJKjXXW4a2x2zDzd05qw9
+R10
+!i10b 0
+!s100 9=Km8JQ2cKS@i3^h5K:dz2
+I4f`Vhk62?J8R]^k>`Hh9[1
+!i119 1
+!i8a 808264160
+R0
+R17
+R12
+R13
+!i122 8
+R18
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+ne026ae2
+vTwSXG5H287cgSxOO8rw9eQoeQ43bfWgjIM3w+5UJdHIjJC58dHzy0MXQlpj8y3iY
+R10
+!i10b 0
+!s100 QZI7nm<B:Xc^AgWfD5BL00
+IdhBDDW1WF4]2Yd8dYl6Ph1
+!i119 1
+!i8a 1788070384
+R0
+R17
+R12
+R13
+!i122 8
+R18
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n7b419e8
+vEZte163BDe4tvdDMzg1i83ps2TuUhUgpNLrF/6Kh2DBR4BUBt0N5qX2hgNL0ErzH
+R10
+!i10b 0
+!s100 6USfeYbI<TNdXWS60igUd0
+IY>njlfK>D;8e<GdfMTKTL0
+!i119 1
+!i8a 2014116176
+R0
+R17
+R12
+R13
+!i122 8
+R18
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+nebee715
+vK8VgNF1POuZ3zEyU2GvBotWuo1NNoThRVIsN8r2bSUnphRxEj2C1Lgu8m6AqHFK/
+R10
+!i10b 0
+!s100 clm[PF;:`VOhE@m7;nAGF1
+I>RD9dUm1?L_M8WPOjeon80
+!i119 1
+!i8a 1038699056
+R0
+R17
+R12
+R13
+!i122 8
+R18
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+nebf73a9
+vtest_simulation_ipgen_lscc_dphy_rx_wrap
+R10
+!i10b 1
+!s100 m62GdCRdYJ<NI>QN1JOWJ0
+I_dfeN2K<CgT]JYSXW8^AY1
+R0
+R11
+R12
+R13
+!i122 8
+L0 5296 2094
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+vtest_simulation_ipgen_lscc_dphy_rx_wrap_cil
+R10
+!i10b 1
+!s100 jD4GO5UHLf@Pz[me^hYVK3
+ISMnm`G=]7W^BN8l@m]zga2
+R0
+R11
+R12
+R13
+!i122 8
+L0 7455 832
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+v+XIgVa96nZG2IlS9oIN13tMjhrlpCSZDttHsN6j9fQPG8Nr4lwVqmt+/uYsjmBxb
+R10
+!i10b 0
+!s100 RTa0^Q5T:99aIV8m025f82
+IHHWfm98n<2O?XneMlb7TR3
+!i119 1
+!i8a 1207100928
+R0
+R17
+R12
+R13
+!i122 8
+Z19 L0 8396 1
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+na9df33
+vWSzKDKtBtUXMXDAwfI0aNNKHC+COZ+YB16eNLdHhLPF22Q6JH3JIpDVLNwFdEIxW
+R10
+!i10b 0
+!s100 0_<195HdN^?mAcWk^gB0=3
+IL;:EhZJG2^kP[PVHQRhzQ1
+!i119 1
+!i8a 2045844448
+R0
+R17
+R12
+R13
+!i122 8
+R19
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n5b0c42e
+v1fdWClWRruET5jz98GMYNuXfXnHN7dgtn1VJ2GUxtemA7xq171Nupw7j12vnfIWl
+R10
+!i10b 0
+!s100 0<3WYWU5I7c5ofPjHhEN<3
+IQ6;1k6g3ad8Ue]Amd=^3]3
+!i119 1
+!i8a 323361136
+R0
+R17
+R12
+R13
+!i122 8
+R19
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n18d526c
+vuayQqscECHvcm6WuaURtwrLbVyBF8KrDS/TOFGyc7zO0O6hCCDr/Un8Q1X2Cjzds
+R10
+!i10b 0
+!s100 nKLRlfSo]6ZokZGWCgR5:3
+IXmcJ1S[jmk96370giLZaj1
+!i119 1
+!i8a 837830464
+R0
+R17
+R12
+R13
+!i122 8
+R19
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n47bc2e8
+v+RaSgGwCMuYjwpO4V0IqlwK5mFWNLrLzIdtRzwsgoeIS7oSCKFp/L6Vy5RTnv71Q
+R10
+!i10b 0
+!s100 UNS4_:]WVC=2^=Mm0ZAML3
+I=C;NIj4Z?O:NCHJnl?<`81
+!i119 1
+!i8a 306592208
+R0
+R17
+R12
+R13
+!i122 8
+R19
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n51e208f
+vUWvGwUZ6FiNuP7lZa3oTRjLmMe9AREN2KqSxvnfowOmRlwcOtQN0bn7PQWk+/Rpw
+R10
+!i10b 0
+!s100 D6jzCkzh[0A>Bl]Y<6l@d2
+IiZS]loI1]AFGh1HSe@lE92
+!i119 1
+!i8a 2009860624
+R0
+R17
+R12
+R13
+!i122 8
+R19
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n2092790
+vE7mPKgUmGuQnhin3emWqhy1ipY+YCDYmZR2KmU7or7BEupWDqmZuaSqFiiXQ24MT
+R10
+!i10b 0
+!s100 m^:PG1;0ZZDAGLh3QUo9?0
+IeZKZIS6G_0=@^JRKnhPd^0
+!i119 1
+!i8a 532335696
+R0
+R17
+R12
+R13
+!i122 8
+R19
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n2769c25
+vOfDJ5lZXVoXT6Ty+2VHWbdNc+AHrzp1So2blcvFRTDbIehwRpLQ7HM2Gcc7OyrGA
+R10
+!i10b 0
+!s100 BZWTEEMgRliA?@j:WL=EZ2
+I4;HWN>j9KcL9i`1LXkAV60
+!i119 1
+!i8a 669191360
+R0
+R17
+R12
+R13
+!i122 8
+R19
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n77e4505
+vHX2WmGDuTRPSgJCJgV+koQjCXh4IMkkSpxJMk1KOdZbZ6t8Py9YMPa/XNar1y51T
+R10
+!i10b 0
+!s100 >kZ2QFBdBm>`5RRAcoc=K0
+I=>i>0OYbHcmbd<J]>ReXS1
+!i119 1
+!i8a 1382631360
+R0
+R17
+R12
+R13
+!i122 8
+R19
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n8014a5c
+v5682MJc8TGTEk+ti5eKV+32yheGwtTI1AM7FvgeL8xVDischleg/T6HsjSraLI7J
+R10
+!i10b 0
+!s100 Sh[e`?QR:TV<UQzkQe83L0
+I==jnY=1bB29bSE8HXjc9b3
+!i119 1
+!i8a 1305000864
+R0
+R17
+R12
+R13
+!i122 8
+R19
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n7cb208
+vbPaGy0AdlljsG8NBDjd0oWWYpef4CJDvGKd7VPgXsvnLBRrf4kPJyLrdXXlYOnQz
+R10
+!i10b 0
+!s100 =10ViXfAVlcRY_57]VI@]3
+IAjgo2oJb=BN`j<;W6QgHd2
+!i119 1
+!i8a 162440368
+R0
+R17
+R12
+R13
+!i122 8
+R19
+R3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R7
+R8
+n8a404ee

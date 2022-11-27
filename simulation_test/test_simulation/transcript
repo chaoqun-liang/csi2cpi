@@ -1,0 +1,265 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/test_simulation.mdo
+# Loading project test_simulation
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 16:27:16 on Nov 17,2022
+# vlog -reportprogress 300 "+incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench"" -work work C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/bus_driver.v 
+# -- Compiling module bus_driver
+# 
+# Top level modules:
+# 	bus_driver
+# End time: 16:27:16 on Nov 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 16:27:16 on Nov 17,2022
+# vlog -reportprogress 300 "+incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench"" -work work C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/clk_driver.v 
+# -- Compiling module clk_driver
+# 
+# Top level modules:
+# 	clk_driver
+# End time: 16:27:16 on Nov 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 16:27:16 on Nov 17,2022
+# vlog -reportprogress 300 "+incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench"" -work work C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/csi2_model.v 
+# -- Compiling module csi2_model
+# 
+# Top level modules:
+# 	csi2_model
+# End time: 16:27:16 on Nov 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 16:27:16 on Nov 17,2022
+# vlog -reportprogress 300 "+incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/rtl"" -work work C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/rtl/test_simulation.v 
+# -- Compiling module test_simulation
+# -- Compiling module test_simulation_ipgen_lscc_dphy_rx_wrap
+# -- Compiling module test_simulation_ipgen_lscc_dphy_rx_wrap_cil
+# 
+# Top level modules:
+# 	test_simulation
+# End time: 16:27:16 on Nov 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 16:27:16 on Nov 17,2022
+# vlog -reportprogress 300 "+incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench"" -work work C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v 
+# -- Compiling module bus_driver
+# -- Compiling module clk_driver
+# -- Compiling module csi2_model
+# -- Compiling module dsi_model
+# -- Compiling module tb_top
+# ** Warning: ** while parsing file included at C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(74)
+# ** at C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dut_params.v(35): (vlog-2263) Redefinition of macro: 'LIFCL' (previously defined near C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dut_params.v(33), old value '', new value '-40') .
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(852): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(852): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(862): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(862): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(865): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(865): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(865): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(865): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(875): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(875): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(878): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(878): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(878): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(878): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(871): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(871): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(887): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(887): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(887): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(887): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(884): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(884): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(884): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(884): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(895): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(895): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(895): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(895): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(895): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(895): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(892): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(892): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(892): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(892): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(892): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(892): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(926): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(926): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(931): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(931): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(934): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(934): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(952): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(952): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(953): (vlog-2697) MSB 63 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(953): (vlog-2697) LSB 56 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(958): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(958): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(959): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(959): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(962): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(962): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(963): (vlog-2697) MSB 63 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(963): (vlog-2697) LSB 56 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(943): (vlog-2697) MSB 39 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(943): (vlog-2697) LSB 32 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(944): (vlog-2697) MSB 47 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(944): (vlog-2697) LSB 40 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(945): (vlog-2697) MSB 55 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(945): (vlog-2697) LSB 48 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(946): (vlog-2697) MSB 63 of part-select into 'byte_data_temp_w' is out of bounds.
+# ** Warning: C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/tb_top.v(946): (vlog-2697) LSB 56 of part-select into 'byte_data_temp_w' is out of bounds.
+# 
+# Top level modules:
+# 	tb_top
+# End time: 16:27:17 on Nov 17,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 63
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+# Start time: 16:27:17 on Nov 17,2022
+# vlog -reportprogress 300 "+incdir+"C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench"" -work work C:/Users/chaoq/my_designs/csi2cpi/simulation_test/test_simulation/testbench/dsi_model.v 
+# -- Compiling module dsi_model
+# 
+# Top level modules:
+# 	dsi_model
+# End time: 16:27:17 on Nov 17,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -lib work -L pmi_work -L ovi_lifcl tb_top 
+# Start time: 16:27:17 on Nov 17,2022
+# //  ModelSim - Lattice FPGA Edition 2021.4 Oct 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb_top
+# Loading work.test_simulation
+# Loading ovi_lifcl.GSR
+# Loading ovi_lifcl.GSR_CORE
+# Loading ovi_lifcl.gsr_center
+# Loading ovi_lifcl.VHI
+# Loading ovi_lifcl.VLO
+# Loading work.csi2_model
+# Loading work.clk_driver
+# Loading work.bus_driver
+# Loading work.test_simulation_ipgen_lscc_dphy_rx_wrap
+# Loading pmi_work.pmi_fifo_dc
+# Loading pmi_work.lscc_fifo_dc
+# Loading pmi_work.lscc_fifo_fwft_fabric
+# Loading pmi_work.lscc_fifo_dc_main
+# Loading sv_std.std
+# Loading ovi_lifcl.DPHY
+# Loading ovi_lifcl.DPHY_CORE
+# Loading ovi_lifcl.mipi_dphy_top
+# Loading ovi_lifcl.MXL_CLK_BUF
+# Loading ovi_lifcl.lmmis_clkrst
+# Loading ovi_lifcl.gen_cell_clk_gate
+# Loading ovi_lifcl.gen_cell_clk_mux21
+# Loading ovi_lifcl.gen_cell_latr
+# Loading ovi_lifcl.rstSync
+# Loading ovi_lifcl.lmmis_fsm
+# Loading ovi_lifcl.mipi_univ_digital
+# Loading ovi_lifcl.MXL_CLK_MUX
+# Loading ovi_lifcl.MXL_SCAN_MUX
+# Loading ovi_lifcl.MXL_CLK_INV
+# Loading ovi_lifcl.ulps_pd_pll_ctrl
+# Loading ovi_lifcl.glitch_free_mux
+# Loading ovi_lifcl.gen_sync
+# Loading ovi_lifcl.MXL_AND_GATE
+# Loading ovi_lifcl.MXL_OR_GATE
+# Loading ovi_lifcl.tx_byteclk_div
+# Loading ovi_lifcl.rvrs_hs_dig_deserializer
+# Loading ovi_lifcl.rvrs_hs_data_align
+# Loading ovi_lifcl.rx_byteclk_sel_div
+# Loading ovi_lifcl.ByteClk_Sel
+# Loading ovi_lifcl.FIFO
+# Loading ovi_lifcl.DESER_ALIGN
+# Loading ovi_lifcl.dphy_clock_master
+# Loading ovi_lifcl.dphy_reset_circuit
+# Loading ovi_lifcl.master_clock_state_machine_control
+# Loading ovi_lifcl.master_clock_control
+# Loading ovi_lifcl.dphy_clock_slave
+# Loading ovi_lifcl.hsrx_state_machine
+# Loading ovi_lifcl.clock_rx_esc_mode_state_machine
+# Loading ovi_lifcl.dphy_data_univ
+# Loading ovi_lifcl.tx_state_machine_control
+# Loading ovi_lifcl.dphy_hs_tx
+# Loading ovi_lifcl.hstx_state_machine
+# Loading ovi_lifcl.dphy_lp_tx
+# Loading ovi_lifcl.tx_escape_mode_state_machine
+# Loading ovi_lifcl.esc_mode_parallel_data_generator
+# Loading ovi_lifcl.dphy_lp_tx_serializer
+# Loading ovi_lifcl.tx_turnaround_state_machine
+# Loading ovi_lifcl.dphy_lp_rx
+# Loading ovi_lifcl.MXL_XOR_GATE
+# Loading ovi_lifcl.rx_esc_mode_state_machine
+# Loading ovi_lifcl.spaced_one_hot_decoder
+# Loading ovi_lifcl.dphy_lp_rx_deserializer
+# Loading ovi_lifcl.rx_esc_mode_cmd_state_machine
+# Loading ovi_lifcl.rx_esc_mode_ulps_state_machine
+# Loading ovi_lifcl.rx_turnaround_state_machine
+# Loading ovi_lifcl.dphy_cd
+# Loading ovi_lifcl.dphy_fwd_hs_rx
+# Loading ovi_lifcl.dphy_skew_cal
+# Loading ovi_lifcl.TEST_BLOCK
+# Loading ovi_lifcl.CIL_TEST_MODE
+# Loading ovi_lifcl.bist_dig_master
+# Loading ovi_lifcl.signal_generator
+# Loading ovi_lifcl.bist_dig_slave
+# Loading ovi_lifcl.bist_align
+# Loading ovi_lifcl.data_checker
+# Loading ovi_lifcl.NOCIL_TEST_MODE
+# Loading ovi_lifcl.X201_X202
+# Loading ovi_lifcl.X202SS001
+# Loading ovi_lifcl.mipi_data_univ
+# Loading ovi_lifcl.mipi_serializer_32_16
+# Loading ovi_lifcl.mipi_serializer_16_8
+# Loading ovi_lifcl.mipi_serializer
+# Loading ovi_lifcl.mipi_deserializer
+# Loading ovi_lifcl.mipi_deserializer_8_16
+# Loading ovi_lifcl.mipi_deserializer_16_32
+# Loading ovi_lifcl.mipi_clock_univ
+# Loading ovi_lifcl.clockgen
+# Loading ovi_lifcl.X201SS001
+# Loading pmi_work.lscc_soft_fifo_dc
+# Loading pmi_work.lscc_fifo_mem
+# Loading pmi_work.lscc_fifo_mem_main
+# Loading pmi_work.lscc_fifo_mem_core
+# Loading ovi_lifcl.PDP16K
+# Loading ovi_lifcl.PDP16K_MODE
+# Loading ovi_lifcl.EBR_CORE
+# Loading ovi_lifcl.ebr_hw
+# Loading ovi_lifcl.ebr_inbuf
+# Loading ovi_lifcl.ebr_polctl
+# Loading ovi_lifcl.ebr_tdp
+# Loading ovi_lifcl.ebr_pwrsw_vcc
+# Loading ovi_lifcl.ebr_pwrup
+# Loading ovi_lifcl.ebr_fbuf
+# Loading ovi_lifcl.ebr_cfg_in
+# Loading ovi_lifcl.fifo_new
+# ** Warning: (vsim-3015) [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 fs  Iteration: 0  Protected: /tb_top/u_test_simulation/lscc_dphy_rx_inst/<protected>/<protected>/<protected>/HARD_RX/NO_CIL/dphy_rx_nocil/DPHY_inst/<protected> File: nofile Line: 735
+# ** Warning: (vsim-3015) [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 fs  Iteration: 0  Protected: /tb_top/u_test_simulation/lscc_dphy_rx_inst/<protected>/<protected>/<protected>/HARD_RX/NO_CIL/dphy_rx_nocil/DPHY_inst/<protected> File: nofile Line: 735
+# ** Warning: (vsim-3015) [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 fs  Iteration: 0  Protected: /tb_top/u_test_simulation/lscc_dphy_rx_inst/<protected>/<protected>/<protected>/HARD_RX/NO_CIL/dphy_rx_nocil/DPHY_inst/<protected> File: nofile Line: 735
+# ** Warning: (vsim-3015) [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 fs  Iteration: 0  Protected: /tb_top/u_test_simulation/lscc_dphy_rx_inst/<protected>/<protected>/<protected>/HARD_RX/NO_CIL/dphy_rx_nocil/DPHY_inst/<protected> File: nofile Line: 735
+# ** Warning: (vsim-3015) [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 fs  Iteration: 0  Protected: /tb_top/u_test_simulation/lscc_dphy_rx_inst/<protected>/<protected>/<protected>/HARD_RX/NO_CIL/dphy_rx_nocil/DPHY_inst/<protected> File: nofile Line: 735
+# .main_pane.wave.interior.cs.body.pw.wf
+#                    0 Word count = 3000
+# 
+# 20000 TEST START
+# 
+# End time: 16:34:19 on Nov 17,2022, Elapsed time: 0:07:02
+# Errors: 0, Warnings: 14

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="3.2.0.18.0" title="CSI2CPI" device="LIFCL-40-8BG400C" performance_grade="8_High-Performance_1.0V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="csi2cpi_wrapper"/>
+        <Source name="myDphy/myDphy.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/axi4s_slave_if.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="source/impl_1/payload_unpack.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="source/impl_1/sync_unpack.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="source/impl_1/csi2cpi_wrapper.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="csi2cpi_wrapper"/>
+        </Source>
+        <Source name="myFifo/myFifo.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="CSI2CPI1.sty"/>
+</RadiantProject>

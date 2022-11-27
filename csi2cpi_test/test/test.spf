@@ -1,0 +1,9 @@
+<RadiantSimulationProject path="." simType="ModelSim" version="2.0" name="test" stage="0" language="1">
+    <Source path="rxdphy/rtl/rxdphy.v" worklib="work" langstandard="" type="VERILOG" include="none"/>
+    <Source path="rxdphy/testbench/tb_top.v" worklib="work" langstandard="Verilog 2001" type="VERILOG" include="none"/>
+    <SimLib value="pmi_work ovi_lifcl"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <Udo value=""/>
+    <TopModule name="tb_top" instance="" language="VERILOG"/>
+</RadiantSimulationProject>

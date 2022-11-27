@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="LIFCL" date="2022 11 23 16:31:40" device="LIFCL-40" generator="ipgen" library="ip" module="byte2pixel" name="b2p" package="CABGA400" source_format="Verilog" speed="8_High-Performance_1.0V" vendor="latticesemi.com" version="1.5.0">
+ <Package>
+  <File modified="2022 11 23 16:31:40" name="rtl/b2p_bb.v" type="black_box_verilog"/>
+  <File modified="2022 11 23 16:31:40" name="b2p.cfg" type="cfg"/>
+  <File modified="2022 11 23 16:31:40" name="misc/b2p_tmpl.v" type="template_verilog"/>
+  <File modified="2022 11 23 16:31:40" name="misc/b2p_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2022 11 23 16:31:40" name="rtl/b2p.v" type="top_level_verilog"/>
+  <File modified="2022 11 23 16:31:40" name="constraints/b2p.ldc" type="timing_constraints"/>
+  <File modified="2022 11 23 16:31:40" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2022 11 23 16:31:40" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2022 11 23 16:31:40" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2022 11 23 16:31:40" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2022 06 23 20:44:27" name="testbench/byte_driver.v" type="testbench_verilog"/>
+  <File modified="2022 06 23 20:44:27" name="testbench/pixel_monitor.v" type="testbench_verilog"/>
+  <File modified="2022 06 23 20:44:27" name="testbench/tb_include/csi2_tasks.vh" type="testbench"/>
+  <File modified="2022 06 23 20:44:27" name="testbench/tb_include/dsi_tasks.vh" type="testbench"/>
+  <File modified="2022 06 23 20:44:27" name="testbench/tb_include/tb_params.vh" type="testbench"/>
+  <File modified="2022 06 23 20:44:27" name="testbench/tb_include/test_csi2_reset.vh" type="testbench"/>
+  <File modified="2022 06 23 20:44:27" name="testbench/tb_include/test_dsi_reset.vh" type="testbench"/>
+  <File modified="2022 06 23 20:44:27" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

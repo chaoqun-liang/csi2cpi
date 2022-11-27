@@ -1,0 +1,1390 @@
+Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.2.0.18.0
+
+Fri Nov 18 14:02:56 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp 8_High-Performance_1.0V -hsp m -pwrprd -html -rpt simulation_test_impl_1.twr simulation_test_impl_1.udb -gui
+
+-------------------------------------------
+Design:          test_simulation
+Family:          LIFCL
+Device:          LIFCL-40
+Package:         CABGA400
+Performance:     8_High-Performance_1.0V
+Package Status:                     Final          Version 39
+Performance Hardware Data Status :   Final Version 115.1
+-------------------------------------------
+
+
+=====================================================================
+                    Table of Contents
+=====================================================================
+    1  DESIGN CHECKING
+        1.1  SDC Constraints
+        1.2  Combinational Loop
+    2  CLOCK SUMMARY
+        2.1  Clock clk_byte_fr_i
+        2.2  Clock clk_p_io
+        2.3  Clock clk_byte_hs_o_c
+        2.4  Clock clk_byte_o_c
+    3  TIMING ANALYSIS SUMMARY
+        3.1  Overall (Setup and Hold)
+            3.1.1  Constraint Coverage
+            3.1.2  Timing Errors
+            3.1.3  Total Timing Score
+        3.2  Setup Summary Report
+        3.3  Hold Summary Report
+        3.4  Unconstrained Report
+            3.4.1  Unconstrained Start/End Points
+            3.4.2  Start/End Points Without Timing Constraints
+    4  DETAILED REPORT
+        4.1  Setup Detailed Report
+        4.2  Hold Detailed Report
+
+=====================================================================
+                    End of Table of Contents
+=====================================================================
+
+==============================================
+1  DESIGN CHECKING
+==============================================
+
+1.1  SDC Constraints
+=====================
+create_clock -name {clk_byte_fr_i} -period 10 [get_ports clk_byte_fr_i]
+create_clock -name {clk_p_io} -period 2.5 [get_ports clk_p_io]
+create_generated_clock -name {clk_byte_hs_o_c} -source [get_ports clk_p_io] -divide_by 4 [get_nets clk_byte_hs_o_c]
+create_generated_clock -name {clk_byte_o_c} -source [get_ports clk_p_io] -divide_by 4 [get_nets clk_byte_o_c]
+
+Operating conditions:
+--------------------
+    Temperature: 85
+
+1.2  Combinational Loop
+========================
+None
+
+==============================================
+2  CLOCK SUMMARY
+==============================================
+
+2.1 Clock "clk_byte_fr_i"
+=======================
+create_clock -name {clk_byte_fr_i} -period 10 [get_ports clk_byte_fr_i]
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+          Clock clk_byte_fr_i           |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From clk_byte_fr_i                     |             Target |          10.000 ns |        100.000 MHz 
+                                        | Actual (all paths) |           5.842 ns |        171.174 MHz 
+clk_byte_fr_i_pad.bb_inst/B (MPW)       |   (50% duty cycle) |           5.000 ns |        200.000 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+          Clock clk_byte_fr_i           |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From clk_p_io                          |                         ---- |                      No path 
+ From clk_byte_hs_o_c                   |                         ---- |                      No path 
+ From clk_byte_o_c                      |                    10.000 ns |             slack = 9.814 ns 
+------------------------------------------------------------------------------------------------------
+
+2.2 Clock "clk_p_io"
+=======================
+create_clock -name {clk_p_io} -period 2.5 [get_ports clk_p_io]
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+             Clock clk_p_io             |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From clk_p_io                          |             Target |           2.500 ns |        400.000 MHz 
+                                        | Actual (all paths) |           0.400 ns |       2500.000 MHz 
+secured_pin_0_1017_625 (MPW)            |   (50% duty cycle) |           0.400 ns |       2500.000 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+             Clock clk_p_io             |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From clk_byte_fr_i                     |                         ---- |                      No path 
+ From clk_byte_hs_o_c                   |                         ---- |                      No path 
+ From clk_byte_o_c                      |                         ---- |                      No path 
+------------------------------------------------------------------------------------------------------
+
+2.3 Clock "clk_byte_hs_o_c"
+=======================
+create_generated_clock -name {clk_byte_hs_o_c} -source [get_ports clk_p_io] -divide_by 4 [get_nets clk_byte_hs_o_c]
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+         Clock clk_byte_hs_o_c          |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From clk_byte_hs_o_c                   |             Target |          10.000 ns |        100.000 MHz 
+                                        | Actual (all paths) |           5.000 ns |        200.000 MHz 
+clk_byte_hs_o_pad.bb_inst/B (MPW)       |   (50% duty cycle) |           5.000 ns |        200.000 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+         Clock clk_byte_hs_o_c          |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From clk_byte_fr_i                     |                         ---- |                      No path 
+ From clk_p_io                          |                         ---- |                      No path 
+ From clk_byte_o_c                      |                         ---- |                      No path 
+------------------------------------------------------------------------------------------------------
+
+2.4 Clock "clk_byte_o_c"
+=======================
+create_generated_clock -name {clk_byte_o_c} -source [get_ports clk_p_io] -divide_by 4 [get_nets clk_byte_o_c]
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+           Clock clk_byte_o_c           |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From clk_byte_o_c                      |             Target |          10.000 ns |        100.000 MHz 
+                                        | Actual (all paths) |           5.000 ns |        200.000 MHz 
+clk_byte_o_pad.bb_inst/B (MPW)          |   (50% duty cycle) |           5.000 ns |        200.000 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+           Clock clk_byte_o_c           |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From clk_byte_fr_i                     |                    10.000 ns |             slack = 3.068 ns 
+ From clk_p_io                          |                     2.500 ns |             slack = 3.560 ns 
+ From clk_byte_hs_o_c                   |                         ---- |                      No path 
+------------------------------------------------------------------------------------------------------
+
+==============================================
+3  TIMING ANALYSIS SUMMARY
+==============================================
+
+3.1  Overall (Setup and Hold)
+==============================
+
+3.1.1  Constraint Coverage
+---------------------------
+Constraint Coverage: 92.5221%
+
+3.1.2  Timing Errors
+---------------------
+Timing Errors: 0 endpoints (setup), 52 endpoints (hold)
+
+3.1.3  Total Timing Score
+--------------------------
+Total Negative Slack: 0.000 ns (setup), 47.454 ns (hold)
+
+3.2  Setup Summary Report
+==========================
+
+-------------------------------------------------------
+          Listing 10 End Points          |    Slack    
+-------------------------------------------------------
+secured_pin_0_1015_74                    |    2.757 ns 
+secured_pin_0_1015_68                    |    2.809 ns 
+secured_pin_0_1015_72                    |    2.811 ns 
+secured_pin_0_1015_73                    |    2.857 ns 
+secured_pin_0_97_9                       |    2.914 ns 
+secured_pin_0_1016_77                    |    2.946 ns 
+secured_pin_0_1015_69                    |    2.975 ns 
+secured_pin_0_132_9                      |    2.979 ns 
+secured_pin_0_5_15                       |    3.033 ns 
+secured_pin_0_4_15                       |    3.033 ns 
+-------------------------------------------------------
+                                         |             
+Setup # of endpoints with negative slack:|           0 
+                                         |             
+-------------------------------------------------------
+
+3.3  Hold Summary Report
+=========================
+
+-------------------------------------------------------
+          Listing 10 End Points          |    Slack    
+-------------------------------------------------------
+secured_pin_0_1016_71                    |   -1.346 ns 
+secured_pin_0_285_11                     |   -1.174 ns 
+secured_pin_0_283_11                     |   -1.174 ns 
+secured_pin_0_279_11                     |   -1.118 ns 
+secured_pin_0_266_11                     |   -1.118 ns 
+secured_pin_0_281_11                     |   -1.115 ns 
+secured_pin_0_1015_71                    |   -1.111 ns 
+secured_pin_0_284_11                     |   -1.097 ns 
+secured_pin_0_267_11                     |   -1.086 ns 
+secured_pin_0_264_11                     |   -1.085 ns 
+-------------------------------------------------------
+                                         |             
+Hold # of endpoints with negative slack: |          52 
+                                         |             
+-------------------------------------------------------
+
+3.4  Unconstrained Report
+===========================
+
+3.4.1  Unconstrained Start/End Points
+--------------------------------------
+
+Clocked but unconstrained timing start points
+-------------------------------------------------------------------
+        Listing 10 Start Points         |           Type           
+-------------------------------------------------------------------
+secured_pin_0_374_20                    |          No required time
+secured_pin_0_380_20                    |          No required time
+secured_pin_0_381_20                    |          No required time
+secured_pin_0_449_20                    |          No required time
+secured_pin_0_450_20                    |          No required time
+secured_pin_0_451_20                    |          No required time
+secured_pin_0_452_20                    |          No required time
+secured_pin_0_453_20                    |          No required time
+secured_pin_0_454_20                    |          No required time
+secured_pin_0_455_20                    |          No required time
+-------------------------------------------------------------------
+                                        |                          
+Number of unconstrained timing start po |                          
+ints                                    |                       102
+                                        |                          
+-------------------------------------------------------------------
+
+Clocked but unconstrained timing end points
+-------------------------------------------------------------------
+         Listing 10 End Points          |           Type           
+-------------------------------------------------------------------
+secured_pin_0_121_14                    |           No arrival time
+secured_pin_0_122_14                    |           No arrival time
+secured_pin_0_123_14                    |           No arrival time
+secured_pin_0_124_14                    |           No arrival time
+secured_pin_0_125_14                    |           No arrival time
+secured_pin_0_126_14                    |           No arrival time
+secured_pin_0_127_14                    |           No arrival time
+secured_pin_0_128_14                    |           No arrival time
+secured_pin_0_129_14                    |           No arrival time
+secured_pin_0_130_14                    |           No arrival time
+-------------------------------------------------------------------
+                                        |                          
+Number of unconstrained timing end poin |                          
+ts                                      |                        75
+                                        |                          
+-------------------------------------------------------------------
+
+3.4.2  Start/End Points Without Timing Constraints
+---------------------------------------------------
+
+I/O ports without constraint
+----------------------------
+Possible constraints to use on I/O ports are:
+set_input_delay,
+set_output_delay,
+set_max_delay,
+create_clock,
+create_generated_clock,
+...
+
+-------------------------------------------------------------------
+     Listing 10 Start or End Points     |           Type           
+-------------------------------------------------------------------
+reset_n_i                               |                     input
+reset_byte_fr_n_i                       |                     input
+ref_dt_i[5]                             |                     input
+ref_dt_i[4]                             |                     input
+ref_dt_i[3]                             |                     input
+ref_dt_i[2]                             |                     input
+ref_dt_i[1]                             |                     input
+ref_dt_i[0]                             |                     input
+tx_rdy_i                                |                     input
+axis_stready_i                          |                     input
+-------------------------------------------------------------------
+                                        |                          
+Number of I/O ports without constraint  |                       114
+                                        |                          
+-------------------------------------------------------------------
+
+Registers without clock definition
+Define the clock for these registers.
+--------------------------------------------------
+There is no instance satisfying reporting criteria
+
+
+==============================================
+4  DETAILED REPORT
+==============================================
+
+4.1  Setup Detailed Report
+===========================
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Detail report of critical paths
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_241_20  (SLICE_R12C17C)
+Path End         : secured_pin_0_1015_74  (EBR_CORE_EBR_CORE_R10C22)
+Source Clock     : clk_byte_o_c (F)
+Destination Clock: clk_byte_o_c (R)
+Logic Level      : 2
+Delay Ratio      : 71.9% (route), 28.1% (logic)
+Clock Skew       : 0.018 ns
+Setup Constraint : 5.000 ns 
+Path Slack       : 2.757 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.795                  0.795  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84
+                                                           NET DELAY      2.601                  3.396  95      
+
+
+Data Path
+
+secured_pin_0_241_13->secured_pin_0_241_20
+                                          SLICE_R12C17C    REG_DEL        0.335                  3.731  9       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_0
+                                                           NET DELAY      0.722                  4.453  9       
+secured_pin_0_658_7->secured_pin_0_658_19
+                                          SLICE_R14C21C    CTOF_DEL       0.233                  4.686  10      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_instance_14_95/secured_instance_13_0/secured_instance_12_0/secured_signal_11_80 ( CSA2 )
+                                                           NET DELAY      0.731                  5.417  10      
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  5.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  5.000  2       
+clk_p_io                                                   NET DELAY      0.000                  5.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.721                  5.721  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLKA )
+                                                           NET DELAY      2.693                  8.414  95      
+                                                           Uncertainty    0.000                  8.414  
+                                                           Setup time     0.240                  8.174  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                    8.174  
+Arrival Time                                                                                    -5.417  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                             2.757  
+
+
+
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_241_20  (SLICE_R12C17C)
+Path End         : secured_pin_0_1015_68  (EBR_CORE_EBR_CORE_R10C22)
+Source Clock     : clk_byte_o_c (F)
+Destination Clock: clk_byte_o_c (R)
+Logic Level      : 2
+Delay Ratio      : 71.1% (route), 28.9% (logic)
+Clock Skew       : 0.018 ns
+Setup Constraint : 5.000 ns 
+Path Slack       : 2.809 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.795                  0.795  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84
+                                                           NET DELAY      2.601                  3.396  95      
+
+
+Data Path
+
+secured_pin_0_241_13->secured_pin_0_241_20
+                                          SLICE_R12C17C    REG_DEL        0.335                  3.731  9       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_0
+                                                           NET DELAY      0.722                  4.453  9       
+secured_pin_0_658_7->secured_pin_0_658_19
+                                          SLICE_R14C21C    CTOF_DEL       0.233                  4.686  10      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_instance_14_95/secured_instance_13_0/secured_instance_12_0/secured_signal_11_80 ( CEA )
+                                                           NET DELAY      0.677                  5.363  10      
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  5.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  5.000  2       
+clk_p_io                                                   NET DELAY      0.000                  5.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.721                  5.721  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLKA )
+                                                           NET DELAY      2.693                  8.414  95      
+                                                           Uncertainty    0.000                  8.414  
+                                                           Setup time     0.242                  8.172  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                    8.172  
+Arrival Time                                                                                    -5.363  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                             2.809  
+
+
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_241_20  (SLICE_R12C17C)
+Path End         : secured_pin_0_1015_72  (EBR_CORE_EBR_CORE_R10C22)
+Source Clock     : clk_byte_o_c (F)
+Destination Clock: clk_byte_o_c (R)
+Logic Level      : 2
+Delay Ratio      : 71.1% (route), 28.9% (logic)
+Clock Skew       : 0.018 ns
+Setup Constraint : 5.000 ns 
+Path Slack       : 2.811 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.795                  0.795  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84
+                                                           NET DELAY      2.601                  3.396  95      
+
+
+Data Path
+
+secured_pin_0_241_13->secured_pin_0_241_20
+                                          SLICE_R12C17C    REG_DEL        0.335                  3.731  9       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_0
+                                                           NET DELAY      0.722                  4.453  9       
+secured_pin_0_658_7->secured_pin_0_658_19
+                                          SLICE_R14C21C    CTOF_DEL       0.233                  4.686  10      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_instance_14_95/secured_instance_13_0/secured_instance_12_0/secured_signal_11_80 ( CSA0 )
+                                                           NET DELAY      0.677                  5.363  10      
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  5.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  5.000  2       
+clk_p_io                                                   NET DELAY      0.000                  5.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.721                  5.721  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLKA )
+                                                           NET DELAY      2.693                  8.414  95      
+                                                           Uncertainty    0.000                  8.414  
+                                                           Setup time     0.240                  8.174  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                    8.174  
+Arrival Time                                                                                    -5.363  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                             2.811  
+
+
+
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_241_20  (SLICE_R12C17C)
+Path End         : secured_pin_0_1015_73  (EBR_CORE_EBR_CORE_R10C22)
+Source Clock     : clk_byte_o_c (F)
+Destination Clock: clk_byte_o_c (R)
+Logic Level      : 2
+Delay Ratio      : 70.4% (route), 29.6% (logic)
+Clock Skew       : 0.018 ns
+Setup Constraint : 5.000 ns 
+Path Slack       : 2.857 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.795                  0.795  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84
+                                                           NET DELAY      2.601                  3.396  95      
+
+
+Data Path
+
+secured_pin_0_241_13->secured_pin_0_241_20
+                                          SLICE_R12C17C    REG_DEL        0.335                  3.731  9       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_0
+                                                           NET DELAY      0.722                  4.453  9       
+secured_pin_0_658_7->secured_pin_0_658_19
+                                          SLICE_R14C21C    CTOF_DEL       0.233                  4.686  10      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_instance_14_95/secured_instance_13_0/secured_instance_12_0/secured_signal_11_80 ( CSA1 )
+                                                           NET DELAY      0.631                  5.317  10      
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  5.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  5.000  2       
+clk_p_io                                                   NET DELAY      0.000                  5.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.721                  5.721  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLKA )
+                                                           NET DELAY      2.693                  8.414  95      
+                                                           Uncertainty    0.000                  8.414  
+                                                           Setup time     0.240                  8.174  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                    8.174  
+Arrival Time                                                                                    -5.317  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                             2.857  
+
+
+
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_241_20  (SLICE_R12C17C)
+Path End         : secured_pin_0_97_9  (SLICE_R16C22D)
+Source Clock     : clk_byte_o_c (F)
+Destination Clock: clk_byte_o_c (R)
+Logic Level      : 3
+Delay Ratio      : 64.5% (route), 35.5% (logic)
+Clock Skew       : -0.074 ns
+Setup Constraint : 5.000 ns 
+Path Slack       : 2.914 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay   Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  ------  ---------------------  ------  
+clk_p_io                                  test_simulation  CLOCK LATENCY   0.000                  0.000  2       
+clk_p_io                                                   NET DELAY       0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN       0.795                  0.795  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84
+                                                           NET DELAY       2.601                  3.396  95      
+
+
+Data Path
+
+secured_pin_0_241_13->secured_pin_0_241_20
+                                          SLICE_R12C17C    REG_DEL         0.335                  3.731  9       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_0
+                                                           NET DELAY       0.722                  4.453  9       
+secured_pin_0_658_7->secured_pin_0_658_19
+                                          SLICE_R14C21C    CTOF_DEL        0.233                  4.686  10      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_instance_14_95/secured_instance_13_0/secured_instance_12_0/secured_signal_11_80
+                                                           NET DELAY       0.616                  5.302  10      
+secured_pin_0_97_10->secured_pin_0_97_21  SLICE_R16C22D    MTOF_DEL        0.169                  5.471  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_221 ( DI0 )
+                                                           NET DELAY       0.000                  5.471  1       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT      0.000                  5.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY   0.000                  5.000  2       
+clk_p_io                                                   NET DELAY       0.000                  5.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN       0.721                  5.721  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY       2.601                  8.322  95      
+                                                           Uncertainty     0.000                  8.322  
+                                                           Setup time     -0.063                  8.385  
+----------------------------------------  ---------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                     8.385  
+Arrival Time                                                                                     -5.471  
+----------------------------------------  ---------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                              2.914  
+
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_242_20  (SLICE_R22C20B)
+Path End         : secured_pin_0_1016_77  (EBR_CORE_EBR_CORE_R10C20)
+Source Clock     : clk_byte_fr_i (F)
+Destination Clock: clk_byte_fr_i (R)
+Logic Level      : 2
+Delay Ratio      : 71.4% (route), 28.6% (logic)
+Clock Skew       : 0.193 ns
+Setup Constraint : 5.000 ns 
+Path Slack       : 2.946 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_byte_fr_i                             test_simulation  CLOCK LATENCY  0.000                  0.000  1       
+clk_byte_fr_i                                              NET DELAY      0.000                  0.000  1       
+clk_byte_fr_i_pad.bb_inst/B->clk_byte_fr_i_pad.bb_inst/O
+                                          SEIO33_CORE_E12  PADI_DEL       1.367                  1.367  526     
+lscc_dphy_rx_inst/secured_instance_24_3/secured_signal_0_132
+                                                           NET DELAY      2.684                  4.051  526     
+
+
+Data Path
+
+secured_pin_0_242_13->secured_pin_0_242_20
+                                          SLICE_R22C20B    REG_DEL        0.335                  4.386  12      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_signal_7_1
+                                                           NET DELAY      0.312                  4.698  12      
+secured_pin_0_725_5->secured_pin_0_725_19
+                                          SLICE_R20C20C    CTOF_DEL       0.233                  4.931  3       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_82 ( CSB2 )
+                                                           NET DELAY      1.109                  6.040  3       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  5.000  1       
+clk_byte_fr_i                             test_simulation  CLOCK LATENCY  0.000                  5.000  1       
+clk_byte_fr_i                                              NET DELAY      0.000                  5.000  1       
+clk_byte_fr_i_pad.bb_inst/B->clk_byte_fr_i_pad.bb_inst/O
+                                          SEIO33_CORE_E12  PADI_DEL       1.468                  6.468  526     
+lscc_dphy_rx_inst/secured_instance_24_3/secured_signal_0_132 ( CLKB )
+                                                           NET DELAY      2.776                  9.244  526     
+                                                           Uncertainty    0.000                  9.244  
+                                                           Setup time     0.258                  8.986  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                    8.986  
+Arrival Time                                                                                    -6.040  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                             2.946  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_243_20  (SLICE_R23C22D)
+Path End         : secured_pin_0_1015_69  (EBR_CORE_EBR_CORE_R10C22)
+Source Clock     : clk_byte_fr_i (F)
+Destination Clock: clk_byte_fr_i (R)
+Logic Level      : 2
+Delay Ratio      : 71.0% (route), 29.0% (logic)
+Clock Skew       : 0.193 ns
+Setup Constraint : 5.000 ns 
+Path Slack       : 2.975 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_byte_fr_i                             test_simulation  CLOCK LATENCY  0.000                  0.000  1       
+clk_byte_fr_i                                              NET DELAY      0.000                  0.000  1       
+clk_byte_fr_i_pad.bb_inst/B->clk_byte_fr_i_pad.bb_inst/O
+                                          SEIO33_CORE_E12  PADI_DEL       1.367                  1.367  526     
+lscc_dphy_rx_inst/secured_instance_24_3/secured_signal_0_132
+                                                           NET DELAY      2.684                  4.051  526     
+
+
+Data Path
+
+secured_pin_0_243_13->secured_pin_0_243_20
+                                          SLICE_R23C22D    REG_DEL        0.335                  4.386  12      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_4
+                                                           NET DELAY      0.322                  4.708  12      
+secured_pin_0_131_7->secured_pin_0_131_19
+                                          SLICE_R21C22D    CTOF_DEL       0.233                  4.941  2       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_instance_14_95/secured_instance_13_0/secured_instance_12_0/secured_signal_11_81 ( CEB )
+                                                           NET DELAY      1.069                  6.010  2       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  5.000  1       
+clk_byte_fr_i                             test_simulation  CLOCK LATENCY  0.000                  5.000  1       
+clk_byte_fr_i                                              NET DELAY      0.000                  5.000  1       
+clk_byte_fr_i_pad.bb_inst/B->clk_byte_fr_i_pad.bb_inst/O
+                                          SEIO33_CORE_E12  PADI_DEL       1.468                  6.468  526     
+lscc_dphy_rx_inst/secured_instance_24_3/secured_signal_0_132 ( CLKB )
+                                                           NET DELAY      2.776                  9.244  526     
+                                                           Uncertainty    0.000                  9.244  
+                                                           Setup time     0.259                  8.985  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                    8.985  
+Arrival Time                                                                                    -6.010  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                             2.975  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_243_20  (SLICE_R23C22D)
+Path End         : secured_pin_0_132_9  (SLICE_R24C21B)
+Source Clock     : clk_byte_fr_i (F)
+Destination Clock: clk_byte_fr_i (R)
+Logic Level      : 4
+Delay Ratio      : 55.6% (route), 44.4% (logic)
+Clock Skew       : 0.101 ns
+Setup Constraint : 5.000 ns 
+Path Slack       : 2.979 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay   Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  ------  ---------------------  ------  
+clk_byte_fr_i                             test_simulation  CLOCK LATENCY   0.000                  0.000  1       
+clk_byte_fr_i                                              NET DELAY       0.000                  0.000  1       
+clk_byte_fr_i_pad.bb_inst/B->clk_byte_fr_i_pad.bb_inst/O
+                                          SEIO33_CORE_E12  PADI_DEL        1.367                  1.367  526     
+lscc_dphy_rx_inst/secured_instance_24_3/secured_signal_0_132
+                                                           NET DELAY       2.684                  4.051  526     
+
+
+Data Path
+
+secured_pin_0_243_13->secured_pin_0_243_20
+                                          SLICE_R23C22D    REG_DEL         0.335                  4.386  12      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_4
+                                                           NET DELAY       0.450                  4.836  12      
+secured_pin_0_140_5->secured_pin_0_140_19
+                                          SLICE_R21C23C    CTOF_DEL        0.233                  5.069  7       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_169
+                                                           NET DELAY       0.469                  5.538  7       
+secured_pin_0_96_10->secured_pin_0_96_21  SLICE_R24C23D    MTOF_DEL        0.169                  5.707  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_170
+                                                           NET DELAY       0.296                  6.003  1       
+secured_pin_0_132_5->secured_pin_0_132_19
+                                          SLICE_R24C21B    CTOF_DEL        0.233                  6.236  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_131 ( DI0 )
+                                                           NET DELAY       0.000                  6.236  1       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT      0.000                  5.000  1       
+clk_byte_fr_i                             test_simulation  CLOCK LATENCY   0.000                  5.000  1       
+clk_byte_fr_i                                              NET DELAY       0.000                  5.000  1       
+clk_byte_fr_i_pad.bb_inst/B->clk_byte_fr_i_pad.bb_inst/O
+                                          SEIO33_CORE_E12  PADI_DEL        1.468                  6.468  526     
+lscc_dphy_rx_inst/secured_instance_24_3/secured_signal_0_132 ( CLK )
+                                                           NET DELAY       2.684                  9.152  526     
+                                                           Uncertainty     0.000                  9.152  
+                                                           Setup time     -0.063                  9.215  
+----------------------------------------  ---------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                     9.215  
+Arrival Time                                                                                     -6.236  
+----------------------------------------  ---------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                              2.979  
+
+
+
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_241_20  (SLICE_R12C17C)
+Path End         : secured_pin_0_5_15  (SLICE_R15C21D)
+Source Clock     : clk_byte_o_c (F)
+Destination Clock: clk_byte_o_c (R)
+Logic Level      : 2
+Delay Ratio      : 66.2% (route), 33.8% (logic)
+Clock Skew       : -0.074 ns
+Setup Constraint : 5.000 ns 
+Path Slack       : 3.033 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.795                  0.795  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84
+                                                           NET DELAY      2.601                  3.396  95      
+
+
+Data Path
+
+secured_pin_0_241_13->secured_pin_0_241_20
+                                          SLICE_R12C17C    REG_DEL        0.335                  3.731  9       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_0
+                                                           NET DELAY      0.722                  4.453  9       
+secured_pin_0_658_7->secured_pin_0_658_19
+                                          SLICE_R14C21C    CTOF_DEL       0.233                  4.686  10      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_instance_14_95/secured_instance_13_0/secured_instance_12_0/secured_signal_11_80 ( CE )
+                                                           NET DELAY      0.390                  5.076  10      
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  5.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  5.000  2       
+clk_p_io                                                   NET DELAY      0.000                  5.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.721                  5.721  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY      2.601                  8.322  95      
+                                                           Uncertainty    0.000                  8.322  
+                                                           Setup time     0.213                  8.109  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                    8.109  
+Arrival Time                                                                                    -5.076  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                             3.033  
+
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_241_20  (SLICE_R12C17C)
+Path End         : secured_pin_0_4_15  (SLICE_R15C22A)
+Source Clock     : clk_byte_o_c (F)
+Destination Clock: clk_byte_o_c (R)
+Logic Level      : 2
+Delay Ratio      : 66.2% (route), 33.8% (logic)
+Clock Skew       : -0.074 ns
+Setup Constraint : 5.000 ns 
+Path Slack       : 3.033 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.795                  0.795  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84
+                                                           NET DELAY      2.601                  3.396  95      
+
+
+Data Path
+
+secured_pin_0_241_13->secured_pin_0_241_20
+                                          SLICE_R12C17C    REG_DEL        0.335                  3.731  9       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_signal_14_0
+                                                           NET DELAY      0.722                  4.453  9       
+secured_pin_0_658_7->secured_pin_0_658_19
+                                          SLICE_R14C21C    CTOF_DEL       0.233                  4.686  10      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_instance_14_95/secured_instance_13_0/secured_instance_12_0/secured_signal_11_80 ( CE )
+                                                           NET DELAY      0.390                  5.076  10      
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  5.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  5.000  2       
+clk_p_io                                                   NET DELAY      0.000                  5.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.721                  5.721  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY      2.601                  8.322  95      
+                                                           Uncertainty    0.000                  8.322  
+                                                           Setup time     0.213                  8.109  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                    8.109  
+Arrival Time                                                                                    -5.076  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Passed)                                                                             3.033  
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    End of Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+
+##########################################################
+
+4.2  Hold Detailed Report
+==========================
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Detail report of critical paths
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_248_20  (SLICE_R22C20C)
+Path End         : secured_pin_0_1016_71  (EBR_CORE_EBR_CORE_R10C20)
+Source Clock     : clk_byte_fr_i (R)
+Destination Clock: clk_byte_fr_i (R)
+Logic Level      : 1
+Delay Ratio      : 80.8% (route), 19.2% (logic)
+Clock Skew       : 0.031 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -1.346 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_byte_fr_i                             test_simulation  CLOCK LATENCY  0.000                  0.000  1       
+clk_byte_fr_i                                              NET DELAY      0.000                  0.000  1       
+clk_byte_fr_i_pad.bb_inst/B->clk_byte_fr_i_pad.bb_inst/O
+                                          SEIO33_CORE_E12  PADI_DEL       1.117                  1.117  526     
+lscc_dphy_rx_inst/secured_instance_24_3/secured_signal_0_132
+                                                           NET DELAY      1.394                  2.511  526     
+
+
+Data Path
+
+secured_pin_0_248_13->secured_pin_0_248_20
+                                          SLICE_R22C20C    REG_DEL        0.177                  2.688  64      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_83 ( RSTB )
+                                                           NET DELAY      0.743                  3.431  64      
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  0.000  1       
+clk_byte_fr_i                             test_simulation  CLOCK LATENCY  0.000                  0.000  1       
+clk_byte_fr_i                                              NET DELAY      0.000                  0.000  1       
+clk_byte_fr_i_pad.bb_inst/B->clk_byte_fr_i_pad.bb_inst/O
+                                          SEIO33_CORE_E12  PADI_DEL       1.117                  1.117  526     
+lscc_dphy_rx_inst/secured_instance_24_3/secured_signal_0_132 ( CLKB )
+                                                           NET DELAY      1.425                  2.542  526     
+                                                           Uncertainty    0.000                  2.542  
+                                                           Hold time      2.235                  4.777  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                   -4.777  
+Arrival Time                                                                                     3.431  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Failed)                                                                            -1.346  
+
+
+
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : clk_p_io  (test_simulation)
+Path End         : secured_pin_0_285_11  (SLICE_R7C20A)
+Source Clock     : clk_p_io (R)
+Destination Clock: clk_byte_o_c (F)
+Logic Level      : 1
+Delay Ratio      : 49.4% (route), 50.6% (logic)
+Clock Skew       : 1.493 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -1.174 ns  (Failed)
+
+
+Data Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                                   CLOCK LATENCY  0.000                  0.000  1       
+clk_p_io                                  test_simulation  INPUT DELAY    0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_580
+                                          DPHY_CORE_DPHY0  C2Q_DEL        0.239                  0.239  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_signal_18_52 ( M0 )
+                                                           NET DELAY      0.233                  0.472  1       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  0.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.195                  0.195  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY      1.298                  1.493  95      
+                                                           Uncertainty    0.000                  1.493  
+                                                           Hold time      0.153                  1.646  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                   -1.646  
+Arrival Time                                                                                     0.472  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Failed)                                                                            -1.174  
+
+
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : clk_p_io  (test_simulation)
+Path End         : secured_pin_0_283_11  (SLICE_R7C20B)
+Source Clock     : clk_p_io (R)
+Destination Clock: clk_byte_o_c (F)
+Logic Level      : 1
+Delay Ratio      : 49.4% (route), 50.6% (logic)
+Clock Skew       : 1.493 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -1.174 ns  (Failed)
+
+
+Data Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                                   CLOCK LATENCY  0.000                  0.000  1       
+clk_p_io                                  test_simulation  INPUT DELAY    0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_582
+                                          DPHY_CORE_DPHY0  C2Q_DEL        0.239                  0.239  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_signal_18_54 ( M0 )
+                                                           NET DELAY      0.233                  0.472  1       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  0.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.195                  0.195  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY      1.298                  1.493  95      
+                                                           Uncertainty    0.000                  1.493  
+                                                           Hold time      0.153                  1.646  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                   -1.646  
+Arrival Time                                                                                     0.472  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Failed)                                                                            -1.174  
+
+
+
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : clk_p_io  (test_simulation)
+Path End         : secured_pin_0_279_11  (SLICE_R8C19B)
+Source Clock     : clk_p_io (R)
+Destination Clock: clk_byte_o_c (F)
+Logic Level      : 1
+Delay Ratio      : 54.7% (route), 45.3% (logic)
+Clock Skew       : 1.493 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -1.118 ns  (Failed)
+
+
+Data Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                                   CLOCK LATENCY  0.000                  0.000  1       
+clk_p_io                                  test_simulation  INPUT DELAY    0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_586
+                                          DPHY_CORE_DPHY0  C2Q_DEL        0.239                  0.239  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_signal_18_58 ( M0 )
+                                                           NET DELAY      0.289                  0.528  1       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  0.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.195                  0.195  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY      1.298                  1.493  95      
+                                                           Uncertainty    0.000                  1.493  
+                                                           Hold time      0.153                  1.646  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                   -1.646  
+Arrival Time                                                                                     0.528  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Failed)                                                                            -1.118  
+
+
+
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : clk_p_io  (test_simulation)
+Path End         : secured_pin_0_266_11  (SLICE_R9C17C)
+Source Clock     : clk_p_io (R)
+Destination Clock: clk_byte_o_c (F)
+Logic Level      : 1
+Delay Ratio      : 54.7% (route), 45.3% (logic)
+Clock Skew       : 1.493 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -1.118 ns  (Failed)
+
+
+Data Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                                   CLOCK LATENCY  0.000                  0.000  1       
+clk_p_io                                  test_simulation  INPUT DELAY    0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_471
+                                          DPHY_CORE_DPHY0  C2Q_DEL        0.239                  0.239  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_signal_18_39 ( M0 )
+                                                           NET DELAY      0.289                  0.528  1       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  0.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.195                  0.195  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY      1.298                  1.493  95      
+                                                           Uncertainty    0.000                  1.493  
+                                                           Hold time      0.153                  1.646  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                   -1.646  
+Arrival Time                                                                                     0.528  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Failed)                                                                            -1.118  
+
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : clk_p_io  (test_simulation)
+Path End         : secured_pin_0_281_11  (SLICE_R9C18A)
+Source Clock     : clk_p_io (R)
+Destination Clock: clk_byte_o_c (F)
+Logic Level      : 1
+Delay Ratio      : 55.0% (route), 45.0% (logic)
+Clock Skew       : 1.493 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -1.115 ns  (Failed)
+
+
+Data Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                                   CLOCK LATENCY  0.000                  0.000  1       
+clk_p_io                                  test_simulation  INPUT DELAY    0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_584
+                                          DPHY_CORE_DPHY0  C2Q_DEL        0.239                  0.239  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_signal_18_56 ( M0 )
+                                                           NET DELAY      0.292                  0.531  1       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  0.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.195                  0.195  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY      1.298                  1.493  95      
+                                                           Uncertainty    0.000                  1.493  
+                                                           Hold time      0.153                  1.646  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                   -1.646  
+Arrival Time                                                                                     0.531  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Failed)                                                                            -1.115  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : secured_pin_0_232_20  (SLICE_R22C20D)
+Path End         : secured_pin_0_1015_71  (EBR_CORE_EBR_CORE_R10C22)
+Source Clock     : clk_byte_fr_i (R)
+Destination Clock: clk_byte_fr_i (R)
+Logic Level      : 1
+Delay Ratio      : 84.7% (route), 15.3% (logic)
+Clock Skew       : 0.031 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -1.111 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_byte_fr_i                             test_simulation  CLOCK LATENCY  0.000                  0.000  1       
+clk_byte_fr_i                                              NET DELAY      0.000                  0.000  1       
+clk_byte_fr_i_pad.bb_inst/B->clk_byte_fr_i_pad.bb_inst/O
+                                          SEIO33_CORE_E12  PADI_DEL       1.117                  1.117  526     
+lscc_dphy_rx_inst/secured_instance_24_3/secured_signal_0_132
+                                                           NET DELAY      1.394                  2.511  526     
+
+
+Data Path
+
+secured_pin_0_232_13->secured_pin_0_232_20
+                                          SLICE_R22C20D    REG_DEL        0.177                  2.688  64      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_77/secured_instance_17_0/secured_instance_16_0/secured_instance_15_0/secured_instance_14_95/secured_instance_13_0/secured_instance_12_0/secured_signal_11_83 ( RSTB )
+                                                           NET DELAY      0.978                  3.666  64      
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  0.000  1       
+clk_byte_fr_i                             test_simulation  CLOCK LATENCY  0.000                  0.000  1       
+clk_byte_fr_i                                              NET DELAY      0.000                  0.000  1       
+clk_byte_fr_i_pad.bb_inst/B->clk_byte_fr_i_pad.bb_inst/O
+                                          SEIO33_CORE_E12  PADI_DEL       1.117                  1.117  526     
+lscc_dphy_rx_inst/secured_instance_24_3/secured_signal_0_132 ( CLKB )
+                                                           NET DELAY      1.425                  2.542  526     
+                                                           Uncertainty    0.000                  2.542  
+                                                           Hold time      2.235                  4.777  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                   -4.777  
+Arrival Time                                                                                     3.666  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Failed)                                                                            -1.111  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : clk_p_io  (test_simulation)
+Path End         : secured_pin_0_284_11  (SLICE_R8C18D)
+Source Clock     : clk_p_io (R)
+Destination Clock: clk_byte_o_c (F)
+Logic Level      : 1
+Delay Ratio      : 56.5% (route), 43.5% (logic)
+Clock Skew       : 1.493 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -1.097 ns  (Failed)
+
+
+Data Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                                   CLOCK LATENCY  0.000                  0.000  1       
+clk_p_io                                  test_simulation  INPUT DELAY    0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_581
+                                          DPHY_CORE_DPHY0  C2Q_DEL        0.239                  0.239  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_signal_18_53 ( M0 )
+                                                           NET DELAY      0.310                  0.549  1       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  0.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.195                  0.195  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY      1.298                  1.493  95      
+                                                           Uncertainty    0.000                  1.493  
+                                                           Hold time      0.153                  1.646  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                   -1.646  
+Arrival Time                                                                                     0.549  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Failed)                                                                            -1.097  
+
+
+
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : clk_p_io  (test_simulation)
+Path End         : secured_pin_0_267_11  (SLICE_R7C20C)
+Source Clock     : clk_p_io (R)
+Destination Clock: clk_byte_o_c (F)
+Logic Level      : 1
+Delay Ratio      : 57.3% (route), 42.7% (logic)
+Clock Skew       : 1.493 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -1.086 ns  (Failed)
+
+
+Data Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                                   CLOCK LATENCY  0.000                  0.000  1       
+clk_p_io                                  test_simulation  INPUT DELAY    0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_470
+                                          DPHY_CORE_DPHY0  C2Q_DEL        0.239                  0.239  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_signal_18_38 ( M0 )
+                                                           NET DELAY      0.321                  0.560  1       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  0.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.195                  0.195  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY      1.298                  1.493  95      
+                                                           Uncertainty    0.000                  1.493  
+                                                           Hold time      0.153                  1.646  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                   -1.646  
+Arrival Time                                                                                     0.560  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Failed)                                                                            -1.086  
+
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : clk_p_io  (test_simulation)
+Path End         : secured_pin_0_264_11  (SLICE_R6C18D)
+Source Clock     : clk_p_io (R)
+Destination Clock: clk_byte_o_c (F)
+Logic Level      : 1
+Delay Ratio      : 57.4% (route), 42.6% (logic)
+Clock Skew       : 1.493 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : -1.085 ns  (Failed)
+
+
+Data Path
+Name                                      Cell/Site Name   Delay Name     Delay  Arrival/Required Time  Fanout  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+clk_p_io                                                   CLOCK LATENCY  0.000                  0.000  1       
+clk_p_io                                  test_simulation  INPUT DELAY    0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_473
+                                          DPHY_CORE_DPHY0  C2Q_DEL        0.239                  0.239  1       
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_signal_18_41 ( M0 )
+                                                           NET DELAY      0.322                  0.561  1       
+
+
+Destination Clock Path
+
+                                                           CONSTRAINT     0.000                  0.000  1       
+clk_p_io                                  test_simulation  CLOCK LATENCY  0.000                  0.000  2       
+clk_p_io                                                   NET DELAY      0.000                  0.000  2       
+secured_pin_0_1017_625->secured_pin_0_1017_620
+                                          DPHY_CORE_DPHY0  C2Q_DELDN      0.195                  0.195  95      
+lscc_dphy_rx_inst/secured_instance_24_2/secured_instance_21_0/secured_instance_20_1/secured_instance_19_0/secured_instance_18_78/secured_instance_10_0/secured_instance_9_0/secured_instance_8_0/secured_instance_7_94/secured_instance_6_0/secured_instance_5_0/secured_signal_4_84 ( CLK )
+                                                           NET DELAY      1.298                  1.493  95      
+                                                           Uncertainty    0.000                  1.493  
+                                                           Hold time      0.153                  1.646  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Required Time                                                                                   -1.646  
+Arrival Time                                                                                     0.561  
+----------------------------------------  ---------------  -------------  -----  ---------------------  ------  
+Path Slack  (Failed)                                                                            -1.085  
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    End of Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+
+##########################################################
+

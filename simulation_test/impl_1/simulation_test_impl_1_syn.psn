@@ -1,0 +1,20 @@
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 3.2.0.18.0
+Command Line: postsyn -a LIFCL -p LIFCL-40 -t CABGA400 -sp 8_High-Performance_1.0V -oc Commercial -top -w -o simulation_test_impl_1_syn.udb -ldc C:/Users/chaoq/my_designs/csi2cpi/simulation_test/impl_1/simulation_test_impl_1.ldc -gui -msgset C:/Users/chaoq/my_designs/csi2cpi/simulation_test/promote.xml simulation_test_impl_1.vm 
+   Architecture:     LIFCL
+   Device:           LIFCL-40
+   Package:          CABGA400
+   Performance:      8_High-Performance_1.0V
+Reading input file 'simulation_test_impl_1.vm' ...
+Reading constraint file 'C:/Users/chaoq/my_designs/csi2cpi/simulation_test/impl_1/simulation_test_impl_1.ldc' ...
+Removing unused logic ...
+INFO - Instance GSR_INST.vhiInst is optimized away.
+INFO - Instance GSR_INST.vloInst is optimized away.
+INFO - Signal GSR_INST.vcc undriven or does not drive anything - clipped
+INFO - Signal GSR_INST.gnd undriven or does not drive anything - clipped
+INFO - Signal GSR_INST.GSROUT undriven or does not drive anything - clipped
+Starting design annotation....
+Writing output file 'simulation_test_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 145 MB

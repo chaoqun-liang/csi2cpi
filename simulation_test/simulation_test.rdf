@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="3.2.0.18.0" title="simulation_test" device="LIFCL-40-8BG400C" performance_grade="8_High-Performance_1.0V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="test_simulation"/>
+        <Source name="test_simulation/test_simulation.ipx" type="IPX_Module" type_short="IPX">
+            <Options top_module="test_simulation"/>
+        </Source>
+        <Source name="sim2/sim2.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim3/sim3.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="test_simulation/test_simulation.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="simulation_test1.sty"/>
+</RadiantProject>
